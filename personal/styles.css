@@ -3,18 +3,31 @@
 	padding: 0;
 }
 
-.centrar {
-	text-align: center;
+.nav {
+	background-color: #23234d;
+	display: flex;
+	justify-content: center;
+}
+	
+.main {
+	background-color: #fff;
 }
 
-.nav {
-	background-color: #060672;
+.portada {
+	display: flex;
+	justify-content: center;
+	display: grid;
 }
+
+.navtextt:hover {
+	color: #a70404;
+} 
 
 body { 
-	padding-top: 3%; 
+	padding-top: 3%;
+	background-color: #909090; 
 }
 
-.navtext {
+.navtextt {
 	color: white;
 }

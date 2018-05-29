@@ -13,18 +13,26 @@
 <body>
 	<div class="nav navbar-fixed-top">
 		<div class="container">
-	
-		<ul class="nav nav-pills">
-			  <li role="presentation"><a class="navtext" href="#">Home</a></li>
-			  <li role="presentation"><a class="navtext" href="#">Profile</a></li>
-			  <li role="presentation"><a class="navtext" href="#">Messages</a></li>
-		</ul>
+			<ul class="nav nav-pills">
+			  <li role="presentation"><a class="navtextt" href="#">Contacto</a></li>
+			  <li role="presentation"><a class="navtextt" href="#">Redes Sociales</a></li>
+			  <li role="presentation"><a class="navtextt" href="#">Deja un comentario</a></li>
+			</ul>
 		</div>
 
-	</div>
+	</div>	
 
+	<div class="main container">
+		
+		<div class="portada">
+			<h1>_Luis Ortega</h1>
+			<h5>Sitio web personal de presentación</h5>	
+		</div>
+
+		<button class="btn-google">Iniciar</button>
+
+
+	</div>
 	
-	<hr><br><br>
-	<hr>
 </body>
 </html>
