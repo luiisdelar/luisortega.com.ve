@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="personal/css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="personal/css/styles.css">
-	<link rel="stylesheet" type="text/css" href="personal/css/bootstrap-social.css">
+	<link rel="	stylesheet" type="text/css" href="personal/css/bootstrap-social.css">
 	
 </head>
 
@@ -16,9 +16,12 @@
 	<div class="nav navbar-fixed-top">
 		<div class="container">
 			<ul class="nav nav-pills">
-			  <li role="presentation"><a class="navtextt" href="#">Contacto</a></li>
-			  <li role="presentation"><a class="navtextt" href="#">Redes Sociales</a></li>
-			  <li role="presentation"><a class="navtextt" href="#">Deja un comentario</a></li>
+			  <li role="presentation"><a class="navtextt" href="https://www.facebook.com/luisortegadlr/" target="_blank"><span class="icon-facebook2"></span></a></li>
+			  <li role="presentation"><a class="navtextt" href="https://www.instagram.com/luiisdelar/" target="_blank"><span class="icon-instagram"></span></a></li>
+			  <li role="presentation"><a class="navtextt" href="https://www.twitter.com/luiiscfc/" target="_blank"><span class="icon-twitter"></span></a></li>
+			  <li role="presentation"><a class="navtextt" href="https://www.t.me/luiisdelar/" target="_blank"><span class="icon-telegram"></span></a></li>
+			  <li role="presentation"><a class="navtextt" href="https://github.com/luiisdelar" target="_blank"><span class="icon-github"></span></a></li>
+			  
 			</ul>
 		</div>
 
@@ -40,6 +43,7 @@
 				
 				<div>
 					<img src="personal/imgs/two.jpg">
+					<h1>Que buena imagen xD</h1>
 				</div>
 
 				<div>
@@ -54,7 +58,18 @@
 
 		</div>
 
+		<div class="aside list-group">
+			<ul class="list-group">
+				<a class="list-group-item">Nada que abre el pasaporte express</a>
+				<a class="list-group-item">Maduro dio prorroga para bolivar soberano</a>
+				<a class="list-group-item">Estan frias y caras</a>
+				<a class="list-group-item">Esta jeva no me habla claro si quiere unos besos o que coño</a>
+			</ul>
+		</div>
+
 	</div>
+	
+	<footer>Luis Eduardo Ortega De La Rosa 2018</footer>
 	
 	<script src="personal/js/jquery.js"></script>
 	<script src="personal/js/jquery.slides.js"></script>

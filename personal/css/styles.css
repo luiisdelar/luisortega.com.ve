@@ -33,11 +33,23 @@ body {
 }
 
 .boxslide {
-	width: 90%;
-	max-width: 1000px;
-	margin: 20px auto;
+	width: 70%;
+	float: left;
 	display: flex;
 	justify-content: center;
+}
+
+.aside {
+	float: left;
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	margin: 1%;
+}
+
+footer {
+	margin-top: 10%;
+	background: #fff;
 }
 
 .slides {
@@ -63,6 +75,10 @@ body {
 	padding: 10px 20px;
 	color: #aeaeae;
 	text-decoration: none;
+}
+
+.nav li a {
+	font-size: 18px;
 }
 
 .slidesjs-pagination li a:hover {
