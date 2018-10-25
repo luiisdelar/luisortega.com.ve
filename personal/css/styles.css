@@ -17,10 +17,12 @@
 	display: flex;
 	justify-content: center;
 	display: grid;
+	margin: 2%;
 }
 
 .navtextt:hover {
 	color: #a70404;
+	border-radius: 100%;
 } 
 
 body { 
@@ -30,62 +32,18 @@ body {
 
 .navtextt {
 	color: white;
+	margin: 3%;
 }
 
-.boxslide {
-	width: 70%;
-	float: left;
-	display: flex;
-	justify-content: center;
-}
 
-.aside {
-	float: left;
-	width: 20%;
-	display: flex;
-	justify-content: center;
-	margin: 1%;
-}
-
-footer {
-	margin-top: 10%;
-	background: #fff;
-}
-
-.slides {
-	width: 75%;
-}
-
-.slides img {
-	width: 100%;
-}
-
-.slidesjs-pagination {
-	background: #000;
-	list-style: none;
-	overflow: hidden;
-}
-
-.slidesjs-pagination li {
-	float: left;
-}
-
-.slidesjs-pagination li a {
-	display: block;
-	padding: 10px 20px;
-	color: #aeaeae;
-	text-decoration: none;
-}
 
 .nav li a {
 	font-size: 18px;
 }
 
-.slidesjs-pagination li a:hover {
-	background: #a70404;
+.article {
+	width: 80%;
+	margin-left: 5%;
+	margin-right: 5%;
+	position: relative;
 }
-
-.slides .active {
-	background: #a70404;
-}
-
