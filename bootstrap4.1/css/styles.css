@@ -1,0 +1,15 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+nav a {
+	color: lime;
+}
+
+.container-fluid {
+	background-color: gray;
+}
+
+.orange {
+	background-color: orange;
+}
