@@ -10,20 +10,20 @@
 
 	<div class="container-fluid">	
 	<div class="articulos"> 	
-		<div class="row">
-  			<div class="col-lg-6">
+		<div class="row justify-content-center">
+  			<div class="col-lg-5">
   				<div class="article">
-					<h2 class="text-center">Diseño/Creación del sitio</h3>
+					<h2 class="text-center">Creación del sitio</h3>
 					<p>Sabiendo que en la actualidad hay muchas formas de crear una pagina
 					web ya sea con ayuda de un Framework, con algun CMS <em>(Content Management System)</em>, 
 					ya sea <a href="https://es.wordpress.com/">Wordpress</a>, <a href="https://www.godaddy.com/es">GoDaddy</a>, <a href="https://es.wix.com/">Wix</a>, etc. Este sitio esta hecho de la manera mas simple posible a mi parecer. Sin alguna plantilla prediseñada, ni con ayuda de algun editor de diseño (ejemplo Dreamweaver), solo con la ayuda de Bootstrap <em>(Framework CSS)</em>, usé Sublime Text como editor de codigo fuente. El sitio esta hecho 100% por mi, con la ayuda del inspector de Firefox que es el navegador que mas uso justamente porque me gusta mas su inspector de elementos que el de Chrome (aunque tambien seria bueno probar el de Opera, Safari e Internet Explorer).</p>
 				</div> 
   			</div>
 
-  			<div class="col-lg-6">
+  			<div class="col-lg-5">
   				<div class="article">
-  					<h3 class="text-center">Habilidades/Conocimientos</h3>
-  					<p>bLaslkda sakjdksladjs ksksask dskaksks adkd s afsalkf sflfns s f ksl fflkssl s flfklnsl slkj lasf skjf salk skljsa fjsa s jsk jslkfslk sk s	</p>
+  					<h3 class="text-center">Skills</h3>
+  					<p>Hasta este ultimo <em>'git push'</em> se programar en C-C++, Java con POO, por ahora hasta la GUI en el caso de Java mientras lo termino de aprender. En el desarrollo web se HTML, CSS, PHP, Javascript, Bootstrap como Framework CSS y Laravel como Framework PHP  </p>
   				</div>
   			</div>
 
@@ -31,8 +31,13 @@
 	</div>
 		
 	<div class="proyectos">
-		<div class="row">
-			<div class="col-6">
+		
+		<div class="text-center">
+			<h2>Proyectos</h2>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="col-4">
 				<div class="card mb-3">
 				 	<img class="card-img-top" src="imgs/koala.jpg" alt="Card image cap" height="200">
 				  	<div class="card-body">
@@ -45,7 +50,7 @@
 				</div>
 			</div>
 			
-			<div class="col-6">
+			<div class="col-4">
 				<div class="card mb-3">
 				 	<img class="card-img-top" src="imgs/koala.jpg" alt="Card image cap" height="200">
 				  	<div class="card-body">

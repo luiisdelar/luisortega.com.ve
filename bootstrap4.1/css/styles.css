@@ -6,8 +6,13 @@ nav a {
 	color: lime;
 }
 
+h1 {
+	margin: 0;
+}
+
 .container-fluid {
 	background-color: gray;
+	padding: 0.5%;
 }
 
 .orange {
