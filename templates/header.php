@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Pagina personal</title>
+	<title>👽 Pagina personal </title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="bootstrap4.1/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap4.1/css/styles.css">
