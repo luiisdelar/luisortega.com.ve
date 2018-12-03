@@ -39,27 +39,27 @@
 				<h2>Proyectos 💼</h2>
 			</div>
 
-			<div class="row justify-content-center">
+			<div class="row justify-content-center align-items-center ">
 				
-				<div class="col-4">
+				<div class="col-4 ">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
 					 	<img class="card-img-top border border-dark" src="imgs/pro3.png" alt="Card image cap" height="">
 					  	<div class="card-body">
 					    	<h5 class="card-title text-center">Sistema de Torneos</h5>
-					    	<p class="card-text">Proyecto de sistema de inscripcion de torneos deportivos, con este sistema los oganizadores pueden conocer cuántas personas van a participar y conocer como repartir los premios, definir los enfrentamientos, por mencionar algunas tareas a realizar por parte de los organizadores.</p>
-					    		<button class="btn btn-primary form-control">Acceder</button>
+					    	<p class="card-text">Proyecto de sistema de inscripción de torneos deportivos, con este sistema los oganizadores pueden conocer cuántas personas van a participar y conocer como repartir los premios, definir los enfrentamientos, por mencionar algunas tareas a realizar por parte de los organizadores.</p>
+					    		<button class="btn btn-dark form-control">Acceder</button>
 					    	<p class="card-text"><small class="text-muted">HTML-CSS-PHP-SQL-Js-Boostrap</small></p>
 					 	</div>
 					</div>
 				</div>
 				
-				<div class="col-4">
+				<div class="col-4 align-middle">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
 					 	<img class="card-img-top border border-dark" src="imgs/pro2.png" alt="Card image cap" height="">
 					  	<div class="card-body">
 					    	<h5 class="card-title text-center">Calculadora de Notas</h5>
 					    	<p class="card-text">Pagina para hacer el calcula de la nota final de alguna materia teniendo en cuenta el sistema de evaluacion de la <a target="_blank" href="http://unet.edu.ve/">UNET</a>.</p>
-					    		<button class="btn btn-primary form-control">Boton</button>
+					    		<button class="btn btn-dark form-control">Acceder</button>
 					    	<p class="card-text"><small class="text-muted">HTML-CSS-Js-Boostrap</small></p>
 					 	</div>
 					</div>
