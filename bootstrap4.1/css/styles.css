@@ -2,8 +2,36 @@ html, body {
 	margin: 0;
 	padding: 0;
 }
+
 nav a {
-	color: lime;
+	color: #FFFFFF;
+	margin: 1%;
+}
+
+.facebook:hover {
+	color: blue;
+	 -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.instagram:hover {
+	color: #b80bc3;
+}	
+
+.github:hover {
+	color: #e31808;
+}
+
+.telegram:hover {
+	color: #a0ff02;
+}
+
+.mail:hover {
+	color: yellow;
+}
+
+.twitter:hover {
+	color: #0eb4f5;
 }
 
 h1 {
@@ -31,6 +59,20 @@ h1 {
 	padding: 0.5%;
 }
 
-.facebook {
-	color: blue;
+.efecto-nav a {
+	-webkit-transform: scale(1,1);	
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 250ms;
+	-moz-transform: scale(1,1);
+	-moz-transition-timing-function: ease-out;
+	-moz-transition-duration: 250ms;
+}
+
+.efecto-nav:hover a {
+	-webkit-transform: scale(1.12,1.12);
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 100ms;
+	-moz-transform: scale(1.12,1.12);
+	-moz-transition-timing-function: ease-out;
+	-moz-transition-duration: 100ms;
 }

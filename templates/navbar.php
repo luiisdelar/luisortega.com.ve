@@ -1,17 +1,28 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="facebook">
-		<i class="fab fa-facebook-square"></i>
-		</div>
-		<i class="github fab fa-github-alt"></i>
-		<i class="instagram fab fa-instagram"></i>
-		<i class="telegram fab fa-telegram-plane"></i>
-		<i class="twitter fab fa-twitter"></i>
-		<i class="mail fas fa-at"></i>
-		<i class="fab fa-css3-alt"></i>
-		<i class="fab fa-js"></i>
-		<i class="fab fa-laravel"></i>
-		<i class="fab fa-php"></i>
-		<i class="fab fa-html5"></i>
-		<i class="fas fa-database"></i>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+	<div class="efecto-nav">	
+	<a class="facebook" href="#">
+		<i class="facebook fab fa-facebook-square fa-2x"></i>
+	</a>
+	</div>
+
+	<a class="github" href="" alt="GitHub">
+		<i class="github fab fa-github-alt fa-2x"></i>
+	</a>
+	
+	<a class="instagram" href="">
+		<i class="fa-spin instagram fab fa-instagram fa-2x"></i>
+	</a>
+	
+	<a class="telegram" href="">
+		<i class="telegram fab fa-telegram-plane fa-2x"></i>
+	</a>
+
+	<a class="twitter" href="">
+		<i class="twitter fab fa-twitter fa-2x"></i>
+	</a>	
+
+	<a class="mail" href="">
+		<i class="mail fas fa-at fa-2x"></i>
+	</a>	
 		
 </nav>
