@@ -10,8 +10,6 @@ nav a {
 
 .facebook:hover {
 	color: blue;
-	 -webkit-transform: scale(1.5);
-    transform: scale(1.5);
 }
 
 .instagram:hover {
@@ -38,6 +36,11 @@ h1 {
 	margin: 0;
 }
 
+.imagen {
+	max-height: 25.5em;
+	width: 100%;
+}
+
 .container-fluid {
 	background-color: gray;
 	padding: 0.5%;
@@ -59,20 +62,17 @@ h1 {
 	padding: 0.5%;
 }
 
-.efecto-nav a {
-	-webkit-transform: scale(1,1);	
-	-webkit-transition-timing-function: ease-out;
-	-webkit-transition-duration: 250ms;
-	-moz-transform: scale(1,1);
-	-moz-transition-timing-function: ease-out;
-	-moz-transition-duration: 250ms;
+.efecto-nav {
+	-webkit-transition: all 1.9s ease; /* Safari y Chrome */
+	-moz-transition: all 1.9s ease; /* Firefox */
+	-o-transition: all 1.9s ease; /* IE 9 */
+	-ms-transition: all 1.9s ease; /* Opera */
 }
 
-.efecto-nav:hover a {
-	-webkit-transform: scale(1.12,1.12);
-	-webkit-transition-timing-function: ease-out;
-	-webkit-transition-duration: 100ms;
-	-moz-transform: scale(1.12,1.12);
-	-moz-transition-timing-function: ease-out;
-	-moz-transition-duration: 100ms;
+.efecto-nav:hover  {
+	-webkit-transform:scale(1.25);
+	-moz-transform:scale(1.25);
+	-ms-transform:scale(1.25);
+	-o-transform:scale(1.25);
+	transform:scale(1.25);
 }

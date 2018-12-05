@@ -4,10 +4,10 @@
 ?>
 	
 
-	<div class="container-fluid fondo">
-		<h1 class="text-center">Luis Eduardo Ortega De La Rosa</h1>
-	</div>	
-
+	<img class="img-fluid imagen" src="imgs/fondo.jpg">
+	<h1 class="text-center">Luis Eduardo Ortega De La Rosa</h1>
+	
+	
 	<div class="container-fluid fondob">	
 		<div class="articulos"> 	
 			<div class="row justify-content-center">
@@ -41,7 +41,7 @@
 
 			<div class="row justify-content-center align-items-center ">
 				
-				<div class="col-4">
+				<div class="col-lg-5">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
 					 	<img class="card-img-top border border-dark" src="imgs/pro3.png" alt="Card image cap" height="">
 					  	<div class="card-body">
@@ -60,7 +60,7 @@
 					</div>
 				</div>
 				
-				<div class="col-4 align-middle">
+				<div class="col-lg-5 align-middle">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
 					 	<img class="card-img-top border border-dark" src="imgs/pro2.png" alt="Card image cap" height="">
 					  	<div class="card-body">
@@ -69,7 +69,6 @@
 					    		<button class="btn btn-dark form-control">Acceder</button>
 					    	<p class="card-text">
 					    		<small class="text-muted">
-					    			<i class="fab fa-laravel"></i> Laravel
 					    			<i class="fab fa-js"></i> Javascript
 					    		</small>
 					    	</p>
@@ -82,19 +81,16 @@
 
 			<div class="row justify-content-center align-items-center ">
 				
-				<div class="col-4">
+				<div class="col-lg-5">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
-					 	<img class="card-img-top border border-dark" src="imgs/pro3.png" alt="Card image cap" height="">
+					 	<img class="card-img-top border border-dark" src="imgs/pro1.png" alt="Card image cap" height="">
 					  	<div class="card-body">
 					    	<h5 class="card-title text-center">Cable UNET</h5>
-					    	<p class="card-text">Proyecto de sistema de inscripción de torneos deportivos, con este sistema los oganizadores pueden conocer cuántas personas van a participar y conocer como repartir los premios, definir los enfrentamientos, por mencionar algunas tareas a realizar por parte de los organizadores.</p>
-					    		<button class="btn btn-dark form-control">Acceder</button>
+					    	<p class="card-text">Sistema Web para la administración de servicios de cable, internet y telefonía.</p>
+					    		<button disabled class="btn btn-dark form-control">Acceder</button>
 					    	<p class="card-text">
 					    		<small class="text-muted">
-					    			<i class="fab fa-html5"></i> HTML
-									<i class="fab fa-css3-alt"></i> CSS
-									<i class="fab fa-php"></i> PHP
-									<i class="fas fa-database"></i> SQL
+									<i class="fab fa-laravel"></i> Laravel
 					    		</small>
 					    	</p>
 					 	</div>
