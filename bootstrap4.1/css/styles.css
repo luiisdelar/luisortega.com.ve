@@ -1,15 +1,19 @@
-html, body {
+* {
 	margin: 0;
 	padding: 0;
 }
 
+.ww {
+	margin-right: 0;
+}
+nav {
+	padding: 0;
+	margin: 0;
+	width: 100%;;
+}
 nav a {
 	color: #FFFFFF;
 	margin: 1%;
-}
-
-.facebook:hover {
-	color: blue;
 }
 
 .instagram:hover {
@@ -21,15 +25,11 @@ nav a {
 }
 
 .telegram:hover {
-	color: #a0ff02;
+	color: #0eb4f5;
 }
 
 .mail:hover {
 	color: yellow;
-}
-
-.twitter:hover {
-	color: #0eb4f5;
 }
 
 h1 {
@@ -44,6 +44,12 @@ h1 {
 .container-fluid {
 	background-color: gray;
 	padding: 0.5%;
+	margin: 0;
+}
+
+.fondo-nav{
+	background: black;
+	transition: all 1s ease; 
 }
 
 .fondo {

@@ -9,8 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="personal/css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="personal/css/styles.css">
 	<link rel="	stylesheet" type="text/css" href="personal/css/bootstrap-social.css">
-	<script type="text/javascript" src="bootstrap4.1/js/all.js"></script>
-	<script src="personal/js/jquery.js"></script>
+	
 </head>
 
 <body>
