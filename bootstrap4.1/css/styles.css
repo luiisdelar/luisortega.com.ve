@@ -24,6 +24,13 @@ nav a {
 	color: #e31808;
 }
 
+.back:hover {
+	color: #FFF;
+}
+
+.proyec:hover {
+	color: #21ff00;
+}
 .telegram:hover {
 	color: #0eb4f5;
 }

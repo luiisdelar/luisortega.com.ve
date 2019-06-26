@@ -6,8 +6,8 @@
         
     
         <div class="d-flex align-items-center">
-            <a class="efecto-nav telegram" href="index.php">
-                <i class="telegram fab fa-telegram-plane fa-2x"></i>
+            <a class="efecto-nav back" href="index.php">
+                <i class="back fas fa-arrow-circle-left fa-2x"></i>
             </a>   
         </div>
 

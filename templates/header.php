@@ -6,10 +6,20 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="bootstrap4.1/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap4.1/css/styles.css">
-	<link rel="stylesheet" type="text/css" href="personal/css/fonts.css">
-	<link rel="stylesheet" type="text/css" href="personal/css/styles.css">
-	<link rel="	stylesheet" type="text/css" href="personal/css/bootstrap-social.css">
 	
+	<!-- scroll -->
+	<script src="bootstrap4.1/js/smooth-scroll.min.js"></script>
+	<script>
+		smoothScroll.init({
+			selector: '[data-scroll]',
+			selectorHeader: null,
+			speed: 2000,
+			easing: 'easeInOutCubic',
+			offset: 60,
+			callback: function(anchor,toggle){}
+		});
+	</script><!-- endscroll -->
+
 </head>
 
-<body>
+<body data-spy="scroll">

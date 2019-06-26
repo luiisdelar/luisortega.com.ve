@@ -18,7 +18,11 @@
 
 		<a class="efecto-nav mail" href="contacto.php">
 			<i class="mail fas fa-at fa-2x"></i>
-		</a>	
+		</a>
+		
+		<a class="efecto-nav proyec" href="#proyectos" alt="Proyectos" data-scroll>
+			<i class="proyect fas fa-book-dead fa-2x"></i>
+		</a>
 	</nav>
 	
 	<div class="containe">
@@ -50,7 +54,7 @@
 		</div>
 	</div>
 
-	<div class="container-fluid fondo">	
+	<div class="container-fluid fondo" id="proyectos">	
 		<div class="proyectos">
 			
 			<div class="text-center mov">
@@ -59,7 +63,7 @@
 
 			<div class="row justify-content-center align-items-center ww">
 				
-				<div class="col-md-5 col-sm-8">
+				<div class="col-md-5 col-sm-8 col-10">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
 					 	<img class="card-img-top border border-dark" src="imgs/pro3.png" alt="Card image cap" height="">
 					  	<div class="card-body">
@@ -79,7 +83,7 @@
 					</div>
 				</div>
 				
-				<div class="col-md-5 col-sm-8 align-middle">
+				<div class="col-md-5 col-sm-8 align-middle col-10">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
 					 	<img class="card-img-top border border-dark" src="imgs/pro2.png" alt="Card image cap" height="">
 					  	<div class="card-body">
@@ -101,7 +105,7 @@
 
 			<div class="row justify-content-center align-items-center ww">
 				
-				<div class="col-md-5 col-sm-8">
+				<div class="col-md-5 col-sm-8 col-10">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
 					 	<img class="card-img-top border border-dark" src="imgs/pro1.png" alt="Card image cap" height="">
 					  	<div class="card-body">
