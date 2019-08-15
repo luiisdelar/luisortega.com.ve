@@ -1,0 +1,13 @@
+.acomodar {
+	display: flex;
+	align-items: end;
+}
+
+.row-1 {
+	display: flex;
+	justify-content: center;
+}
+
+select {
+	text-align: center;
+}
