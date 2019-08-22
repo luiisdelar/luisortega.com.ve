@@ -1,3 +1,7 @@
+$('.efect-1').click(function(){
+	
+});
+
 function aceptar() {
 	
 	var select = parseInt(document.getElementById('seleccion').value);
