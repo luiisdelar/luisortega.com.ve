@@ -1,25 +1,6 @@
 function aceptar() {
 	
 	var select = parseInt(document.getElementById('seleccion').value);
-	var capa = document.getElementById("flujo");
-	var elemento = document.getElementById("botonaceptar");
-	var input, input2, label, label2, diva, divb, titulo, spana, spanb;
-	var x = elemento.parentNode;
-	var volver = document.createElement("button");
-	var calcular = document.createElement("button");
-
-	calcular.innerHTML = 'Calcular';
-	volver.innerHTML = 'Volver';
-	volver.className = 'form-control btn btn-primary';	
-	calcular.className = 'form-control btn btn-primary';
-
-	// x.removeChild(elemento);
-	// elemento = document.getElementById("seleccion");
-	// x = elemento.parentNode;
-	// x.removeChild(elemento);
-	// elemento = document.getElementById("label1");
-	// x = elemento.parentNode;
-	// x.removeChild(elemento);
 
 	$('#container-2').remove();
 	$('.row-1').empty();
@@ -27,9 +8,15 @@ function aceptar() {
 	for (var i = 0; i < select ; i++) {
 		
 		$('.row-1').append(
-			$('<h3>',{
-				'text': 'Parcial '+(i+1)
-			}),
+			
+			$('<div>',{
+				'class': 'col-12'
+			}).append(
+				$('<h3>',{
+					'text': 'Parcial '+(i+1),
+					'class': 'title'
+				})
+			),
 			$('<div>',{
 				'class': 'form-group col-lg-6'
 			}).append(
@@ -57,11 +44,10 @@ function aceptar() {
 				}).append(
 					$('<span>',{
 						'class': 'input-group-text',
-						'text': 'Porcentaje: %',
-						'id': 'porc'+(i+1),
+						'text': 'Porcentaje: %'
 					}),
 					$('<input>',{
-							'id': 'nota'+(i+1),
+							'id': 'porc'+(i+1),
 							'class': 'form-control',
 							'aria-describedby': 'basic-addon3',
 							'type': 'number'
@@ -69,65 +55,29 @@ function aceptar() {
 				)
 			)
 		);
-
-		// titulo = document.createElement('h3');
-		// titulo.innerHTML = "Parcial "+(i+1);
-		// capa.appendChild(titulo);
-		// divx = document.createElement('div');
-		// diva = document.createElement("div");
-		// divy = document.createElement("div");
-		// divb = document.createElement("div"); 
-		// input = document.createElement("input");
-		// label = document.createElement("label");
-		// input2 = document.createElement("input");
-		// label2 = document.createElement("label");
-		// spana = document.createElement('span');
-		// spanb = document.createElement('span');
-		
-		
-		// input.setAttribute("id","nota"+(i+1));
-		// input.className = "form-control";
-		// input2.setAttribute("id","porc"+(i+1));
-		// input2.className = "form-control";
-		// divx.className = "form-group col-lg-6";
-		// divy.className = "form-group col-lg-6";
-		// diva.className = "input-group";
-		// divb.className = "input-group";
-	
-		// spana.className = "input-group-addon";
-		// spanb.className = "input-group-addon";
-		// spana.innerHTML = "Nota: 1-100";
-		// spanb.innerHTML = "Porcentaje: %";
-		// input.setAttribute('aria-describedby','sizing-addon1');
-		// input.setAttribute('type','number');
-		// input2.setAttribute('aria-describedby','sizing-addon1');
-		// input2.setAttribute('type','number');
-		
-		// diva.appendChild(spana);
-		// diva.appendChild(input);
-		// divx.appendChild(diva);
-		// capa.appendChild(divx);
-
-		// divb.appendChild(spanb);
-		// divb.appendChild(input2);
-		// divy.appendChild(divb);
-		// capa.appendChild(divy);
-		//capa.appendChild(divb);
 	
 	}
 
-		div = document.createElement('div');
-		div.className = 'form-group acomodar';
-		calcular.setAttribute('onclick','calculos('+select+')');
-		div.appendChild(calcular);
-		capa.appendChild(div);
-		
-		div = document.createElement('div');
-		div.className = 'form-group acomodar';
-		volver.setAttribute('onclick','document.location="index.html"');
-
-		div.appendChild(volver);
-		capa.appendChild(div);
+		$('.row-1').append(
+			$('<div>',{
+				'class': 'col-8 form-group'
+			}).append(
+				$('<button>',{
+					'class': 'form-control btn btn-primary',
+					'onclick': 'calculos('+select+')',
+					'text': 'Calcular'	
+				})
+			),
+			$('<div>',{
+				'class': 'col-8 form-group',
+			}).append(
+				$('<button>',{
+					'class': 'form-control btn btn-primary',
+					'onclick':'document.location="index.html"',
+					'text': 'Volver'
+				})
+			)
+		);
 		
 }
 
@@ -155,7 +105,10 @@ function calculos(parciales) {
 		notaFinal += (parseInt(document.getElementById('porc'+(i+1)).value)*convert(parseInt(document.getElementById('nota'+(i+1)).value)))/100;
 	}
 
-	alert("Su nota definitiva acumulada es "+notaFinal);
+	$('.nota-final').text('Nota Final: '+notaFinal);
+	$('#modal-notes').modal('show');
+
+	// alert("Su nota definitiva acumulada es "+notaFinal);
 }	
 
 function convert(i){
