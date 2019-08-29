@@ -1,12 +1,26 @@
-$('.efect-1').click(function(){
-	
-});
+window.onload=function(){
+	iniciar();
+}
 
-function aceptar() {
+function check(e) {
+    tecla = (document.all) ? e.keyCode : e.which;
+
+    //Tecla de retroceso para borrar, siempre la permite
+    if (tecla == 8 ) {
+        return true;
+    }
+
+    // Patron de entrada, en este caso solo acepta numeros
+    patron = /[0-9]/;
+    tecla_final = String.fromCharCode(tecla);
+    return patron.test(tecla_final);
+}
+
+function calcular(){
 	
 	var select = parseInt(document.getElementById('seleccion').value);
 
-	$('#container-2').remove();
+	$('#container-2').empty();
 	$('.row-1').empty();
 
 	for (var i = 0; i < select ; i++) {
@@ -14,7 +28,8 @@ function aceptar() {
 		$('.row-1').append(
 			
 			$('<div>',{
-				'class': 'col-12'
+				'class': 'col-12',
+				'data-aos': 'zoom-in'
 			}).append(
 				$('<h3>',{
 					'text': 'Parcial '+(i+1),
@@ -22,7 +37,8 @@ function aceptar() {
 				})
 			),
 			$('<div>',{
-				'class': 'form-group col-lg-6'
+				'class': 'form-group col-lg-6',
+				'data-aos': 'zoom-in'
 			}).append(
 				$('<div>',{
 					'class': 'input-group' 
@@ -36,12 +52,14 @@ function aceptar() {
 							'id': 'nota'+(i+1),
 							'class': 'form-control',
 							'aria-describedby': 'basic-addon3',
-							'type': 'number'
+							'type': 'number',
+							'onkeypress': 'return check(event)'
 					})
 				)
 			),
 			$('<div>',{
 				'class': 'form-group col-lg-6',
+				'data-aos': 'zoom-in'
 			}).append(
 				$('<div>',{
 					'class': 'input-group' 
@@ -64,42 +82,154 @@ function aceptar() {
 
 		$('.row-1').append(
 			$('<div>',{
-				'class': 'col-8 form-group'
+				'class': 'row ancho d-flex justify-content-center'
 			}).append(
-				$('<button>',{
-					'class': 'form-control btn btn-primary',
-					'onclick': 'calculos('+select+')',
-					'text': 'Calcular'	
-				})
+				$('<div>',{
+					'class': 'col-4 form-group',
+					'data-aos': 'fade-up'
+				}).append(
+					$('<button>',{
+						'class': 'form-control btn btn-primary hover-person calcular',
+						'onclick': 'calculos('+select+')',
+						'text': 'Calcular'	
+					})
+				)
 			),
 			$('<div>',{
-				'class': 'col-8 form-group',
+				'class': 'row ancho d-flex justify-content-center'
 			}).append(
-				$('<button>',{
-					'class': 'form-control btn btn-primary',
-					'onclick':'document.location="index.html"',
-					'text': 'Volver'
-				})
+				$('<div>',{
+					'class': 'col-4 form-group',
+					'data-aos': 'fade-up'
+				}).append(
+					$('<button>',{
+						'class': 'form-control btn btn-primary hover-person',
+						'onclick': 'iniciar()',
+						'text': 'Volver'
+					})
+				)
 			)
 		);
 		
 }
 
+function iniciar(){
+	$('.row-1').empty();
+	
+	$('.row-1').append(
+		$('<div>', {
+			'class': 'col-xl-4 col-md-6 col-sm-6 col-10',
+			'data-aos': 'fade-right'
+		}).append(
+			$('<div>',{
+				'class': 'form-group'
+			}).append(
+				$('<label>',{
+					'id': 'label1',
+					'text': 'Número de parciales:'
+				}),
+				$('<select>', {
+					'class': 'form-control',
+					'id': 'seleccion'
+				}).append(
+					$('<option>',{
+						'text': '1'
+					}),
+					$('<option>',{
+						'text': '2'
+					}),
+					$('<option>',{
+						'text': '3'
+					}),
+					$('<option>',{
+						'text': '4'
+					})
+				)
+			)
+		),
+		$('<div>',{
+			'class': 'col-xl-4 col-md-6 col-sm-6 col-10 acomodar form-group efect-1',
+			'data-aos': 'fade-left'
+		}).append(
+			$('<input>',{
+				'type': 'button',
+				'id': 'botonaceptar',
+				'name': 'boton',
+				'onclick': 'calcular()',
+				'class': 'btn btn-primary form-control acomodar hover-person',
+				'value': 'Calcular'
+			})
+		)
+	
+	);
+
+	// $('#container-2').append(
+	// 	$('<h1>',{
+	// 		'class': 'text-center mt-5',
+	// 		'text': 'Cuanto me falta'
+	// 	}),
+	// 	$('<div>',{
+	// 		'class': 'row row-1'
+	// 	}).append(
+	// 		$('<div>',{
+	// 			'class': 'col-xl-4 col-md-6 col-sm-6 col-10',
+	// 			'data-aos': 'fade-right'
+	// 		}).append(
+	// 			$('<div>',{
+	// 				'class': 'form-group'
+	// 			}).append(
+	// 				$('<label>',{
+	// 					'id': 'label1',
+	// 					'text': 'Número de parciales:'
+	// 				}),
+	// 				$('<select>',{
+	// 					'class': 'form-control',
+	// 					'id': 'seleccion'		
+	// 				}).append(
+	// 					$('<option>',{
+	// 						'text': '2'
+	// 					}),
+	// 					$('<option>',{
+	// 						'text': '3'
+	// 					}),
+	// 					$('<option>',{
+	// 						'text': '4'
+	// 					})
+	// 				)
+	// 			)
+	// 		),
+	// 		$('<div>',{
+	// 			'class': 'col-xl-4 col-md-6 col-sm-6 col-10 acomodar form-group',
+	// 			'data-aos': 'fade-left'
+	// 		}).append(
+	// 			$('<input>',{
+	// 				'type': 'button',
+	// 				'id': 'botonaceptar',
+	// 				'name': 'boton',
+	// 				'onclick': 'cuantoFalta()',
+	// 				'class': 'btn btn-primary form-control acomodar hover-person',
+	// 				'value': 'Calcular'
+	// 			})
+	// 		)
+	// 	)
+	// );	
+}
+
 function calculos(parciales) {
-	var contNotas = 0, porcentajes = 0, notaFinal = 0;
+	var contNotas = 0, porcentajes = 0, notaFinal = 0, band = false;
 
 	for (var i = 0; i < parciales; i++) {	
 		contNotas = parseInt(document.getElementById('nota'+(i+1)).value);
-		porcentajes += parseInt(document.getElementById('porc'+(i+1)).value);
-		if (contNotas > 100 || contNotas < 0) {
-			alert("Error en notas");
-			aceptar();
-		}
+		porcentajes += parseInt(document.getElementById('porc'+(i+1)).value);		
 	}
-
+	
+	if (contNotas > 100 || contNotas < 0) {
+		$('.nota-final').text('Error en notas');
+		band=true;
+	}
 	if (porcentajes != 100) {
-		alert("Error en suma de porcentajes");
-		aceptar();
+		$('.nota-final').text('Error en suma de porcentajes:');
+		band=true;
 	}
 
 	//			|||||||||
@@ -108,12 +238,28 @@ function calculos(parciales) {
 	for (var i = 0; i < parciales; i++) {
 		notaFinal += (parseInt(document.getElementById('porc'+(i+1)).value)*convert(parseInt(document.getElementById('nota'+(i+1)).value)))/100;
 	}
+	
+	if (notaFinal >= 4.5 && !band){
+		$('.nota-final').addClass('text-success');
+		$('.nota-final').text('Nota Final: '+notaFinal);
+	}
+	if (notaFinal < 4.5 && !band ){
+		$('.nota-final').addClass('text-danger');
+		$('.nota-final').text('Nota Final: '+notaFinal);
+	}
 
-	$('.nota-final').text('Nota Final: '+notaFinal);
 	$('#modal-notes').modal('show');
 
-	// alert("Su nota definitiva acumulada es "+notaFinal);
 }	
+
+function cuantoFalta(){
+	var select = parseInt(document.getElementById('seleccion').value);
+
+	for (var i = 0; i < select ; i++) {
+		
+	}
+	
+}
 
 function convert(i){
     var retorno=0.0;
