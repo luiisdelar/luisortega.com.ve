@@ -2,13 +2,16 @@
 <html>
 
 <head>
-	<title>👽 En construcción </title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="bootstrap4.1/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap4.1/css/styles.css">
-	
+	<title> Web Personal 👽 </title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/styles.css">
+	<script src="bootstrap/js/all.js"></script>
+
 	<!-- scroll -->
-	<script src="bootstrap4.1/js/smooth-scroll.min.js"></script>
+	<script src="bootstrap/js/smooth-scroll.min.js"></script>
 	<script>
 		smoothScroll.init({
 			selector: '[data-scroll]',

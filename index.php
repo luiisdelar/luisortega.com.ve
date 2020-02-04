@@ -1,55 +1,73 @@
 <?php 
-	  require("templates/header.php"); 
-	  
+	require("templates/header.php"); 	  
 ?>
 
 	<nav class="navbar navbar-dark justify-content-center fixed-top fondo-nav" id="menu">
-		<a class="efecto-nav github" href="https://github.com/luiisdelar" target="_blank" alt="GitHub">
-			<i class="github fab fa-github-alt fa-2x"></i>
-		</a>
-		
-		<a class="efecto-nav instagram" href="https://instagram.com/luiisdelar" target="_blank">
-			<i class="instagram fab fa-instagram fa-2x"></i>
-		</a>
-		
-		<a class="efecto-nav telegram" href="https://t.me/luiisdelar" target="_blank">
-			<i class="telegram fab fa-telegram-plane fa-2x"></i>
-		</a>
+		<div class="mobile-menu">
+            <a href="#" class="mobile">Menu</a>
+        </div>
 
-		<a class="efecto-nav mail" href="contacto.php">
-			<i class="mail fas fa-at fa-2x"></i>
-		</a>
+		<div class="desktop-menu">
+			<a class="efecto-nav github nav-position" href="https://github.com/luiisdelar" target="_blank" alt="GitHub">
+				<i class="github fab fa-github-alt fa-2x"></i>
+				<span class="d-block">GitHub</span>
+			</a>
 		
-		<a class="efecto-nav proyec" href="#proyectos" alt="Proyectos" data-scroll>
-			<i class="proyect fas fa-book-dead fa-2x"></i>
-		</a>
+			<a class="efecto-nav instagram nav-position" href="https://instagram.com/luiisdelar" target="_blank">
+				<i class="instagram fab fa-instagram fa-2x"></i>
+				<span class="d-block">Instagram</span> 
+			</a>
+		
+			<a class="efecto-nav telegram nav-position" href="https://t.me/luiisdelar" target="_blank">
+				<i class="telegram fab fa-telegram-plane fa-2x"></i> 
+				<span class="d-block">Telegram</span>
+			</a>
+
+			<a class="efecto-nav mail nav-position" href="contacto.php">
+				<i class="mail fas fa-at fa-2x"></i> 
+				<span class="d-block">Contacto</span>
+			</a>
+		
+			<a class="efecto-nav proyec nav-position" href="#proyectos" alt="Proyectos" data-scroll>
+				<i class="proyect fas fa-book-dead fa-2x"></i> 
+				<span class="d-block">Proyectos</span>
+			</a>
+		</div>
 	</nav>
 	
-	<div class="containe">
-		<img class="img-fluid imagen" src="imgs/fondo.jpg">
-		<h1 class="text-center display-6">Luis Eduardo Ortega De La Rosa</h1>
+	<div class="container-fluid p-0">
+		
+		<div class="row m-0">
+			<div class="col-12 banner">
+				<!-- <img class="img-fluid imagen" src="imgs/fondo.jpg"> -->
+				<h1 class="text-center display-6"><span>Luis Eduardo Ortega </span><span>De La Rosa</span></h1>	
+			</div>
+		
+		</div>
 	</div>
+
 	
-	<div class="container-fluid fondob">	
-		<div class="articulos"> 	
-			<div class="row justify-content-center ww">
-	  			<div class="col-md-5 col-sm-9">
-	  				<div class="article">
-						<h2 class="text-center">Creación del sitio 🔧</h3>
-						<p>Sabiendo que en la actualidad hay muchas formas de crear una pagina
-						web ya sea con ayuda de un Framework, con algun CMS <em>(Content Management System)</em>, 
-						ya sea <a target="_blank" href="https://es.wordpress.com/">Wordpress</a>, <a target="_blank" href="https://www.godaddy.com/es">GoDaddy</a>, <a target="_blank" href="https://es.wix.com/">Wix</a>, etc. Este sitio esta hecho de la manera mas simple posible a mi parecer. Sin alguna plantilla prediseñada, ni con ayuda de algun editor de diseño (ejemplo Dreamweaver), solo con la ayuda de Bootstrap <em>(Framework CSS)</em>, usé Sublime Text como editor de codigo fuente. El sitio esta hecho 100% por mi, con la ayuda del inspector de Firefox que es el navegador que mas uso justamente porque me gusta mas su inspector de elementos que el de Chrome (aunque tambien seria bueno probar el de Opera, Safari e Internet Explorer). De igual manera este sitio es algo simple, estatico y de modo informativo. Como este hosting es gratuito no es muy bueno a la hora de cargar las paginas y es posible que a veces falle.</p>
 
-					</div> 
-	  			</div>
+	<div class="container">	
+		<div class="articles"> 	
+			<div class="row justify-content-center">
+				<div class="col-md-9 col-sm-12">
+					<h3 class="m-4 text-center">Creación del sitio 🔧</h3>  
+					<article>
 
-	  			<div class="col-md-5 col-sm-9">
-	  				<div class="article">
-	  					<h3 class="text-center">Skills 📜</h3>
-	  					<p>Hasta este ultimo <em>'git push'</em> del repositorio en Git de la pagina (que es donde guardo cualquier cambio en la pagina para despues subir los cambios al hosting), se programar en C-C++, Java, con POO en los anteriores, por ahora hasta la GUI en el caso de Java mientras lo termino de aprender. En el desarrollo web se HTML, CSS, PHP, Javascript, Bootstrap como Framework CSS y Laravel como Framework PHP, gestion de base de datos PL/SQL con Oracle Database y amateur en el uso del controlador de versiones Git. Espero que a medida que pase el tiempo este parrafo se haga mas largo y mas profesional.  </p>
-	  				</div>
-	  			</div>
+						<p>			
+							La idea de este sitio es mostrar algunos proyectos, entre otras
+							cosas hechas por mi con diferentes tecnologias y lenguajes de programación. 
+							En los proyectos que se muestran mas abajo se podra ver el uso de HTML, CSS3, 
+							PHP, Javascript, SQL, Python, Wordpress, en mi repositorio de Git tambien se 
+							pueden ver algunas cosas hechas con C, C++, Java, NodeJs, ademas del uso de 
+							algunos Frameworks como Boostrap para CSS, Laravel para PHP entre otros, 
+							tambien se ira adicionando contenido que aun esta en etapa de desarrollo 
+							y aprendizaje.
+						</p>
 
+					</article>
+				</div>	
 			</div>
 		</div>
 	</div>
@@ -58,12 +76,12 @@
 		<div class="proyectos">
 			
 			<div class="text-center mov">
-				<h2>Proyectos 💼</h2>
+				<h2 class="m-4">Proyectos 💼</h2>
 			</div>
 
-			<div class="row justify-content-center align-items-center ww">
+			<div class="row justify-content-center align-items-center">
 				
-				<div class="col-md-5 col-sm-8 col-10">
+				<div class="col-md-5 col-sm-10 col-12">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
 					 	<img class="card-img-top border border-dark" src="imgs/pro3.png" alt="Card image cap" height="">
 					  	<div class="card-body">
@@ -83,7 +101,7 @@
 					</div>
 				</div>
 				
-				<div class="col-md-5 col-sm-8 align-middle col-10">
+				<div class="col-md-5 col-sm-10 align-middle col-12">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
 					 	<img class="card-img-top border border-dark" src="imgs/pro2.png" alt="Card image cap" height="">
 					  	<div class="card-body">
@@ -105,7 +123,7 @@
 
 			<div class="row justify-content-center align-items-center ww">
 				
-				<div class="col-md-5 col-sm-8 col-10">
+				<div class="col-md-5 col-sm-10 col-12">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
 					 	<img class="card-img-top border border-dark" src="imgs/pro1.png" alt="Card image cap" height="">
 					  	<div class="card-body">
