@@ -2,12 +2,33 @@
 	require("templates/header.php"); 	  
 ?>
 
-	<nav class="navbar navbar-dark justify-content-center fixed-top fondo-nav" id="menu">
-		<div class="mobile-menu">
-            <a href="#" class="mobile">Menu</a>
-        </div>
 
-		<div class="desktop-menu">
+<!--nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+	<a class="navbar-brand" href="#">Navbar</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"baria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent">
+	
+	<ul class="navbar-nav mr-auto">
+		<li class="nav-item active">
+			<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Link</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link disabled" href="#">Disabled</a>
+		</li>
+	</ul>
+</nav-->
+
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top fondo-nav" id="menu">
+		<a class="navbar-brand labelmenu mb-0" href="#" data-toggle="collapse" data-target="#navbarSupportedContent" >Menu</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+
 			<a class="efecto-nav github nav-position" href="https://github.com/luiisdelar" target="_blank" alt="GitHub">
 				<i class="github fab fa-github-alt fa-2x"></i>
 				<span class="d-block">GitHub</span>
@@ -23,18 +44,14 @@
 				<span class="d-block">Telegram</span>
 			</a>
 
-			<a class="efecto-nav mail nav-position" href="contacto.php">
+			<a class="efecto-nav mail nav-position" href="mailto:luisortegadlr@gmail.com">
 				<i class="mail fas fa-at fa-2x"></i> 
 				<span class="d-block">Contacto</span>
 			</a>
-		
-			<a class="efecto-nav proyec nav-position" href="#proyectos" alt="Proyectos" data-scroll>
-				<i class="proyect fas fa-book-dead fa-2x"></i> 
-				<span class="d-block">Proyectos</span>
-			</a>
 		</div>
+		
 	</nav>
-	
+
 	<div class="container-fluid p-0">
 		
 		<div class="row m-0">
@@ -45,8 +62,6 @@
 		
 		</div>
 	</div>
-
-	
 
 	<div class="container">	
 		<div class="articles"> 	
@@ -105,10 +120,8 @@
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
 					 	<img class="card-img-top border border-dark" src="imgs/pro2.png" alt="Card image cap" height="">
 					  	<div class="card-body">
-					    	<h5 class="card-title text-center">Calculadora de Notas</h5>
-					    	<p class="card-text">Pagina para hacer el calcula de la nota final de alguna materia teniendo en cuenta el sistema de evaluacion de la <a target="_blank" href="http://unet.edu.ve/">UNET</a>.</p>
-					    		<button class="btn btn-dark form-control"
-										onclick="location.href='calculadoraUNET/';">Acceder</button>
+					    	<button class="btn btn-dark form-control" onclick="location.href='proyectos/cableunet/';">Acceder</button>
+					    
 					    	<p class="card-text">
 					    		<small class="text-muted">
 					    			<i class="fab fa-js"></i> Javascript
@@ -118,12 +131,7 @@
 					</div>
 				</div>
 
-
-			</div>
-
-			<div class="row justify-content-center align-items-center ww">
-				
-				<div class="col-md-5 col-sm-10 col-12">
+				<div class="col-md-5 col-sm-10 align-middle col-12">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
 					 	<img class="card-img-top border border-dark" src="imgs/pro1.png" alt="Card image cap" height="">
 					  	<div class="card-body">
@@ -140,11 +148,8 @@
 					</div>
 				</div>
 				
-			</div>
-
 		</div>	
 	</div>
-
-
+</div>
 
 <?php require("templates/footer.php") ?>

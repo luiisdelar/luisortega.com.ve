@@ -3,6 +3,7 @@
 	padding: 0;
 }
 
+
 /***	nav		***/
 
 nav {
@@ -28,10 +29,6 @@ nav a span {
 
 .github:hover {
 	color: #e31808;
-}
-
-.back:hover {
-	color: #FFF;
 }
 
 .proyec:hover {
@@ -94,7 +91,6 @@ nav a span {
 	width: 100%;
 }
 
-
 .banner:after {
     position: absolute;
     content: '';
@@ -112,6 +108,72 @@ nav a span {
 }
 
 /***	end-banner		***/
+
+/***	menu-responsive		***/
+
+nav a.labelmenu {
+	color: #fff !important;
+}
+
+@media (min-width: 767.9px){
+	.labelmenu {
+		display: none;
+	}
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.nav-position {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.nav-position svg.svg-inline--fa {
+		width: 100%;
+	}
+	
+}
+
+@media (max-width: 767.9px){
+	.nav-position {
+		display: flex;
+		align-items: center;
+		margin: 20px auto;
+	}
+
+	a.nav-position span {
+		width: 100px;
+	}
+
+	.navbar-collapse a.instagram {
+		color: #b80bc3;
+	}	
+	
+	.navbar-collapse a.github {
+		color: #ecb0ab;
+	}
+	
+	.navbar-collapse a.telegram {
+		color: #0eb4f5;
+	}
+	
+	.navbar-collapse a.mail {
+		color: yellow;
+	}
+}
+
+.navbar-dark .navbar-toggler {
+	border-color: rgba(223, 223, 223, 0.58);
+}
+
+nav a:hover {
+	text-decoration: none;
+}
+	
+/***	end-menu-responsive		***/
 
 .articles h3 {
 	margin: 30px;
@@ -138,76 +200,6 @@ nav a span {
 	}
 
 }
-
-.nav-position {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.nav-position svg.svg-inline--fa {
-	width: 100%;
-}
-
-nav a:hover {
-	text-decoration: none;
-}
-
-/***	menu-responsive		***/
-
-
-@media (min-width: 769px){
-	.mobile-menu {
-		display: none;
-	}
-
-	#menu {
-		display: inline-flex;
-	}
-
-	.desktop-menu {
-		display: inline-flex !important;
-	}
-}
-
-@media (max-width: 768px){
-	
-	.mobile-menu {
-		display: block;
-	}
-
-	#menu {
-		display: flex;
-		flex-direction: column;
-	}
-	
-	.desktop-menu {
-		display: none;
-	}
-
-	.nav-position {
-		flex-direction: row;
-		justify-content: flex-start;
-	}
-
-	.nav-position svg {
-		width: 56px !important;
-		height: 32px !important;
-	} 
-	
-	.efecto-nav {
-		width: 150px;
-		margin-top: 15px;
-		margin-bottom: 15px;
-	}
-	
-	.efecto-nav span {
-		display: flex !important;
-		align-items: center;
-	}
-}
-
-/***	end-menu-responsive	***/
 
 .articles {
 	margin: 10px;
@@ -236,4 +228,8 @@ footer p {
 
 .proyectos .card .card-text {
 	margin-top: 10px;
+}
+
+.contacto-cont {
+	min-height: 88.6vh;
 }

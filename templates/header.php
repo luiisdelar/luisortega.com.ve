@@ -8,7 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/styles.css">
-	<script src="bootstrap/js/all.js"></script>
 
 	<!-- scroll -->
 	<script src="bootstrap/js/smooth-scroll.min.js"></script>
