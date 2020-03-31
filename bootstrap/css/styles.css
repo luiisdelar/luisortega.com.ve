@@ -184,22 +184,19 @@ nav a:hover {
 	text-align: justify;
 }
 
-
+/*
 @media (min-width: 768px){
-
 	.container {
 		max-width: 992px;
 	}
-
 }
 
 @media (max-width: 767px){
-	
 	.container {
 		max-width: 792px;
 	}
 
-}
+}*/
 
 .articles {
 	margin: 10px;
@@ -230,6 +227,8 @@ footer p {
 	margin-top: 10px;
 }
 
-.contacto-cont {
-	min-height: 88.6vh;
+button.btn:hover {
+	color: #21ff00;
+	background-color: #000;
+	transition: all 1.5s;
 }

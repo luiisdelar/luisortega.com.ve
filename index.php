@@ -3,32 +3,14 @@
 ?>
 
 
-<!--nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-	<a class="navbar-brand" href="#">Navbar</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"baria-expanded="false" aria-label="Toggle navigation">
-	<span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent">
-	
-	<ul class="navbar-nav mr-auto">
-		<li class="nav-item active">
-			<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">Link</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link disabled" href="#">Disabled</a>
-		</li>
-	</ul>
-</nav-->
-
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top fondo-nav" id="menu">
 		<a class="navbar-brand labelmenu mb-0" href="#" data-toggle="collapse" data-target="#navbarSupportedContent" >Menu</a>
+		
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		
 		<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-
 			<a class="efecto-nav github nav-position" href="https://github.com/luiisdelar" target="_blank" alt="GitHub">
 				<i class="github fab fa-github-alt fa-2x"></i>
 				<span class="d-block">GitHub</span>
@@ -49,53 +31,47 @@
 				<span class="d-block">Contacto</span>
 			</a>
 		</div>
-		
 	</nav>
 
 	<div class="container-fluid p-0">
-		
 		<div class="row m-0">
 			<div class="col-12 banner">
-				<!-- <img class="img-fluid imagen" src="imgs/fondo.jpg"> -->
 				<h1 class="text-center display-6"><span>Luis Eduardo Ortega </span><span>De La Rosa</span></h1>	
 			</div>
-		
 		</div>
 	</div>
 
-	<div class="container">	
-		<div class="articles"> 	
+	<div class="container-fluid">	
+		<div class="articles m-0"> 	
 			<div class="row justify-content-center">
-				<div class="col-md-9 col-sm-12">
+				<div class="col-md-7 col-sm-12">
 					<h3 class="m-4 text-center">Creación del sitio 🔧</h3>  
-					<article>
-
+					<article class="mb-4">
 						<p>			
 							La idea de este sitio es mostrar algunos proyectos, entre otras
-							cosas hechas por mi con diferentes tecnologias y lenguajes de programación. 
-							En los proyectos que se muestran mas abajo se podra ver el uso de HTML, CSS3, 
+							cosas hechas por mi, con diferentes tecnologias y lenguajes de programación 
+							(ademas de ver como era la subida de una página a un servidor en internet). 
+							En los proyectos que se muestran se podra ver el uso de HTML, CSS3, 
 							PHP, Javascript, SQL, Python, Wordpress, en mi repositorio de Git tambien se 
 							pueden ver algunas cosas hechas con C, C++, Java, NodeJs, ademas del uso de 
-							algunos Frameworks como Boostrap para CSS, Laravel para PHP entre otros, 
-							tambien se ira adicionando contenido que aun esta en etapa de desarrollo 
-							y aprendizaje.
+							algunos Frameworks como Boostrap para CSS, Laravel para PHP, actualmente
+							en aprendizaje de la libreria creada por Facebook React JS, entre otros, 
+							a medida de lo posible se ira adicionando contenido que aun esta en etapa de desarrollo.
 						</p>
-
 					</article>
 				</div>	
 			</div>
 		</div>
 	</div>
 
-	<div class="container-fluid fondo" id="proyectos">	
+	<div class="container-fluid" id="proyectos">	
 		<div class="proyectos">
 			
 			<div class="text-center mov">
 				<h2 class="m-4">Proyectos 💼</h2>
 			</div>
 
-			<div class="row justify-content-center align-items-center">
-				
+			<div class="row justify-content-center align-items-center">	
 				<div class="col-md-5 col-sm-10 col-12">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
 					 	<img class="card-img-top border border-dark" src="imgs/pro3.png" alt="Card image cap" height="">
@@ -103,7 +79,7 @@
 					    	<h5 class="card-title text-center">Sistema de Torneos</h5>
 					    	<p class="card-text">Proyecto de sistema de inscripción de torneos deportivos, con este sistema los oganizadores pueden conocer cuántas personas van a participar y conocer como repartir los premios, definir los enfrentamientos, por mencionar algunas tareas a realizar por parte de los organizadores.</p>
 					    		<button class="btn btn-dark form-control" 
-										onclick="location.href='proyectos/sistema-deportes/';">Acceder</button>
+										onclick="location.href='proyectos/torneo-deportes/';">Acceder</button>
 					    	<p class="card-text">
 					    		<small class="text-muted">
 					    			<i class="fab fa-html5"></i> HTML
@@ -147,7 +123,6 @@
 					 	</div>
 					</div>
 				</div>
-				
 		</div>	
 	</div>
 </div>

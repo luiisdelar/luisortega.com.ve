@@ -8,7 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/styles.css">
-
 	<!-- scroll -->
 	<script src="bootstrap/js/smooth-scroll.min.js"></script>
 	<script>
@@ -20,7 +19,8 @@
 			offset: 60,
 			callback: function(anchor,toggle){}
 		});
-	</script><!-- endscroll -->
+	</script>
+	<!-- endscroll -->
 
 </head>
 

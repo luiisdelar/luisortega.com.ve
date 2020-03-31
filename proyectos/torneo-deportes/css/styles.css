@@ -1,0 +1,21 @@
+/*.container {
+	min-height: 90vh;
+	overflow: auto;
+}*/
+
+.form-group {
+	width: 50%;
+	margin-left: 25%; 
+}
+
+nav {
+	margin-bottom: 3%;
+}
+
+.nav2 {
+	margin-bottom: 0;
+}
+
+.navbar {
+	background-color: #0069d9 !important; 
+}
