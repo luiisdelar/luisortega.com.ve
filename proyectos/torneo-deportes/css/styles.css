@@ -1,21 +1,38 @@
-/*.container {
-	min-height: 90vh;
-	overflow: auto;
-}*/
-
-.form-group {
-	width: 50%;
-	margin-left: 25%; 
+html {
+	background-color: #fff;
 }
 
-nav {
-	margin-bottom: 3%;
+body {
+	background-image: linear-gradient(#0069d9, #fff);
+	height: 100vh;
 }
 
-.nav2 {
-	margin-bottom: 0;
+.form-style {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 4px solid #000;
+	background-image:  linear-gradient(#fff, #0069d957);
+}
+
+@media (max-width: 991px){
+	.form-style {
+		width: 90%;
+	}
 }
 
 .navbar {
-	background-color: #0069d9 !important; 
+	background-image: linear-gradient(#3b3ee3, #1977dd);
+	margin-bottom: 40px; 
+}
+
+.botonluis span {
+	font-size: inherit;
+	font-family: inherit;
+	color: #fff;
+}
+
+.form-register {
+	width: 85%;
 }

@@ -4,6 +4,7 @@
 
 
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top fondo-nav" id="menu">
+		
 		<a class="navbar-brand labelmenu mb-0" href="#" data-toggle="collapse" data-target="#navbarSupportedContent" >Menu</a>
 		
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
@@ -16,11 +17,6 @@
 				<span class="d-block">GitHub</span>
 			</a>
 		
-			<a class="efecto-nav instagram nav-position" href="https://instagram.com/luiisdelar" target="_blank">
-				<i class="instagram fab fa-instagram fa-2x"></i>
-				<span class="d-block">Instagram</span> 
-			</a>
-		
 			<a class="efecto-nav telegram nav-position" href="https://t.me/luiisdelar" target="_blank">
 				<i class="telegram fab fa-telegram-plane fa-2x"></i> 
 				<span class="d-block">Telegram</span>
@@ -29,6 +25,11 @@
 			<a class="efecto-nav mail nav-position" href="mailto:luisortegadlr@gmail.com">
 				<i class="mail fas fa-at fa-2x"></i> 
 				<span class="d-block">Contacto</span>
+			</a>
+
+			<a class="efecto-nav instagram nav-position" href="https://instagram.com/luiisdelar" target="_blank">
+				<i class="instagram fab fa-instagram fa-2x"></i>
+				<span class="d-block">Instagram</span> 
 			</a>
 		</div>
 	</nav>
@@ -76,11 +77,22 @@
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
 					 	<img class="card-img-top border border-dark" src="imgs/pro3.png" alt="Card image cap" height="">
 					  	<div class="card-body">
-					    	<h5 class="card-title text-center">Sistema de Torneos</h5>
-					    	<p class="card-text">Proyecto de sistema de inscripción de torneos deportivos, con este sistema los oganizadores pueden conocer cuántas personas van a participar y conocer como repartir los premios, definir los enfrentamientos, por mencionar algunas tareas a realizar por parte de los organizadores.</p>
-					    		<button class="btn btn-dark form-control" 
-										onclick="location.href='proyectos/torneo-deportes/';">Acceder</button>
+					    	<h4 class="card-title text-center">Sistema de Torneos</h4>
 					    	<p class="card-text">
+								En este proyecto podemos registrar la participación de distintos
+								equipos en diferentes torneos deportivos. El administrador del 
+								sistema puede editar y ver la informacion de los distintos equipos
+								inscritos en los torneos. Con este sistema los oganizadores pueden conocer cuántas 
+								personas van a participar y conocer como repartir los premios, 
+								definir los enfrentamientos, por mencionar algunas tareas a 
+								realizar por parte de los organizadores. Esta aplicación fue hecha con 
+								HTML, CSS3, Boostrap, Js y SQL para guardar la informacion en la base de datos.
+							</p>
+							<div class="btn-card">
+								<button class="btn btn-neg form-control" 
+									    onclick="location.href='proyectos/torneo-deportes/';">Acceder</button>
+							</div>
+							<p class="card-text">
 					    		<small class="text-muted">
 					    			<i class="fab fa-html5"></i> HTML
 									<i class="fab fa-css3-alt"></i> CSS

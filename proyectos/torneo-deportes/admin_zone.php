@@ -116,11 +116,6 @@
 
 								$resultado->execute();
 												   
-								/*$registros=$base->query("select i.name_tourn, i.participants, u.name_team, u.creation_date, u.adress, u.email,
-										   u.user, u.password, u.website, u.short_name, i.id
-										   from inscriptions i, users_pass u
-										   where name_tourn='$tour' and category='$cat' and i.user=u.user")->fetchAll(PDO::FETCH_OBJ);
-								*/								
 								$cont=1;
 
 								while ($registros=$resultado->fetch(PDO::FETCH_ASSOC)) {

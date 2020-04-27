@@ -227,8 +227,29 @@ footer p {
 	margin-top: 10px;
 }
 
+.btn-card {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.btn-neg {
+	background-color: black;
+	color: #fff;
+	font-weight: bold;
+}
+
+button.btn {
+	width: 70%;
+	transition: all 1.5s;
+}
+
 button.btn:hover {
-	color: #21ff00;
-	background-color: #000;
+	color: #262626;
+	background-color: #fff;
+	border: 2px solid;
+	border-color: #000;
 	transition: all 1.5s;
 }

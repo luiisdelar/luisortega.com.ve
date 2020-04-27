@@ -40,7 +40,7 @@
 
 <body>
 	<?php require("templates/navbar2.php"); ?>
-	<div class="container h-100">
+	<div class="container mt-5">
 	
 	<div class="row justify-content-center">	
 
