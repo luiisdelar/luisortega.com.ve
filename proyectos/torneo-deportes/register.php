@@ -71,7 +71,7 @@
 	
 
 <div class="container">	
-	<div class="row justify-content-center align-items-center">	
+	<div class="d-flex justify-content-center align-items-center">	
 		<form class="form-style form-register shadow-lg col-12" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 		
 			<h1 class="text-center">Register</h1>
@@ -148,7 +148,7 @@
 			<div class="row col-12 justify-content-center">
 				<div class="col-md-4 col-12">
 					<div class="form-group">
-						<input class="form-control btn btn-primary" type="submit" name="register" value="Register">
+						<input class="hover-btn form-control btn btn-primary" type="submit" name="register" value="Register">
 					</div>
 				</div>	
 			</div>
@@ -156,7 +156,7 @@
 			<div class="row col-12 justify-content-center">
 				<div class="col-md-4 col-12">
 					<div class="form-group">
-						<input class="form-control btn btn-primary" type="button" value="Return" onclick="location.href='index.php';">
+						<input class="hover-btn form-control btn btn-primary" type="button" value="Return" onclick="location.href='index.php';">
 					</div>	
 				</div>
 			</div>

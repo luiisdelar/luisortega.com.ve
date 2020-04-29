@@ -13,18 +13,31 @@ body {
 	flex-direction: column;
 	align-items: center;
 	border: 4px solid #000;
-	background-image:  linear-gradient(#fff, #0069d957);
+	background-image: linear-gradient(#f9f9f9, #a8a8a8);
+}
+
+.form-register {
+	width: 85%;
 }
 
 @media (max-width: 991px){
 	.form-style {
 		width: 90%;
 	}
+
+	.form-register {
+		width: 100%;
+	}
+
+	.row-table {
+		margin-left: 0;
+	}
 }
 
 .navbar {
-	background-image: linear-gradient(#3b3ee3, #1977dd);
-	margin-bottom: 40px; 
+	background-image: linear-gradient(#26b708, #000000a3);
+	margin-bottom: 40px;
+	border-bottom: 4px solid #000;
 }
 
 .botonluis span {
@@ -33,6 +46,16 @@ body {
 	color: #fff;
 }
 
-.form-register {
-	width: 85%;
+.hover-btn:hover {
+	background-color: #26b708;
+	color: #fff;
+	border-color: #fff;
+	transition: 1.5s;
+}
+
+@media (max-width: 525px){
+	nav {
+		display: flex;
+		flex-direction: column;
+	}
 }

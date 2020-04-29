@@ -7,29 +7,22 @@
 </head>
 	
 <body>
-
 	 		<h1 class="text-center">Admin Zone</h1>
-	
 			<form class="row" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 			 <div class="col-md-4 col-xs-12"> 
 				<div class="form-group">
 					<h4>Tournaments:</h4>
-					<select class="form-control" name="tour">
-				
+					<select class="form-control" name="tour">			
 			<?php 
 					require("data_connection.php");	
-
 					$registros=$base->query("select * from tournaments")->fetchAll(PDO::FETCH_OBJ);
-
 					foreach ($registros as $tor) {
 						echo "<option value='" . $tor->name_tourn. "'>" . $tor->name_tourn . "</option>";
 					}
-
 			 ?>
 			</select>
 				</div>
 			</div>
-
 				<div class="col-md-4 col-xs-12">
 					<div class="form-group">
 						<h4>Category:</h4>
@@ -44,7 +37,7 @@
 				<div class="col-md-4 col-xs-12 ">
 					<div class="form-group">
 						<h4>&nbsp;</h4>
-						<input class="btn btn-primary" type="submit" name="consult" value="Consult">
+						<input class="hover-btn btn btn-danger" type="submit" name="consult" value="Consult">
 					</div>	
 				</div>
 				
@@ -69,68 +62,58 @@
 						<?php
 
 							if (isset($_POST["consult"]) || isset($_GET["pagination"])) {
-
-
 								if (isset($_POST["consult"])) {
 									$tour=$_POST["tour"];
 									$cat=$_POST["cat"];
 								}
-
 								if(isset($_GET["pagination"])){
 									$tour=$_GET["tour"];
 									$cat=$_GET["cat"];
 								}
-
 								$tamanho_pag=4;	
-
 								if (isset($_GET["pagination"])) {
-
 									$pagina=$_GET["pagination"];
-									
 								}else{
-										$pagina=1;
+									$pagina=1;
 								}
-
-
 								$desde=($pagina-1)*$tamanho_pag;
-
 								$sql="select i.name_tourn, i.participants, u.name_team, u.creation_date, u.adress, u.email,
 										   u.user, u.password, u.website, u.short_name, i.id
 										   from inscriptions i, users_pass u
 										   where name_tourn='$tour' and category='$cat' and i.user=u.user";
-
 								$resultado=$base->prepare($sql);
-
 								$resultado->execute();
-
 							 	$num_filas=$resultado->rowCount();
-
 								$totalpaginas=ceil($num_filas/$tamanho_pag);
-
 								$sql2="select i.name_tourn, i.participants, u.name_team, u.creation_date, u.adress, u.email,
 										   u.user, u.password, u.website, u.short_name, i.id
 										   from inscriptions i, users_pass u
 										   where name_tourn='$tour' and category='$cat' and i.user=u.user limit $desde,$tamanho_pag";
 
 								$resultado=$base->prepare($sql2);
-
-								$resultado->execute();
-												   
+								$resultado->execute();												   
 								$cont=1;
-
 								while ($registros=$resultado->fetch(PDO::FETCH_ASSOC)) {
-										 ?>
-								
+									?>								
 									<form method="POST" action="manage_data.php">
 										<tr>
-											<td><?php echo $tour; ?></td>
-											<td><?php echo $cat; ?></td>
-											<td><?php echo $registros["name_team"]; ?></td>
-											<td><?php echo $registros["participants"]; ?></td>
+											<td><span><?php echo $tour; ?></span></td>
+											<td><span><?php echo $cat; ?></span></td>
+											<td><span><?php echo $registros["name_team"]; ?></span></td>
+											<td><span><?php echo $registros["participants"]; ?></span></td>
 											<td>
-												<input class="btn btn-success" type="button" name="details" value="Details" onclick='admin(<?php echo $cont; ?>)'> 
-												<input class='btn btn-warning' type='submit' name='edit' value='Edit'>
-												<input class="btn btn-danger" type="button" name="delete" value="Delete" onclick='deletee("<?php echo $tor->id; ?>")'>
+												<div class="row w-100 row-table">
+													<div class="col-lg-4 col-12 form-group d-flex justify-content-center">
+														<input class="btn btn-success" type="button" name="details" value="Details" onclick='admin(<?php echo $cont; ?>)'> 
+													</div>
+													<div class="col-lg-4 col-12 form-group d-flex justify-content-center">
+														<input class='btn btn-warning' type='submit' name='edit' value='Edit'>
+													</div>
+													<div class="col-lg-4 col-12 form-group d-flex justify-content-center">
+														<input class="btn btn-danger" type="button" name="delete" value="Delete" onclick='deletee("<?php echo $tor->id; ?>")'>
+													</div>
+												</div>
+												
 												<!-- Hiddens items -->
 												<input type='hidden' value="<?php echo $registros["name_team"]; ?>" name='team'>
 										    	<input type='hidden' value="<?php echo $registros["adress"]; ?>" name='adress'>

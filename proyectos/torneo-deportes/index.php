@@ -17,24 +17,24 @@
 				}else{
 					?>
 					<!-- Modal -->
-						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-						  <div class="modal-dialog" role="document">
-						    <div class="modal-content">
-						      <div class="modal-header">
-						        <h5 class="modal-title" id="exampleModalLabel">Login error</h5>
-						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						          <span aria-hidden="true">&times;</span>
-						        </button>
-						      </div>
-						      <div class="modal-body">
-						        <p>Username or password incorrect</p>
-						      </div>
-						      <div class="modal-footer">
-						        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-						      </div>
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+						    	<div class="modal-header">
+						        	<h5 class="modal-title" id="exampleModalLabel">Login error</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+									</button>
+						      	</div>
+						      	<div class="modal-body">
+						        	<p>Username or password incorrect</p>
+						      	</div>
+						      	<div class="modal-footer">
+						        	<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+						      	</div>
 						    </div>
-						  </div>
 						</div>
+					</div>
 						<script>$('#exampleModal').modal('show');  </script>
 					<?php	
 				}		
@@ -56,16 +56,20 @@
 							<input class="form-control" type="password" placeholder="password" name="password">
 						</div>				
 					
-						<div class="form-group col-md-6 col-sm-12 ">	
-							<input class="btn btn-primary form-control" type="submit" value="Login" name="login">
+						<div class="form-group col-md-6 col-sm-12 ">
+							<button class="hover-btn botonluis btn btn-primary form-control" type="submit" name="login">
+								<i class="fas fa-id-card"></i> Login
+							</button>
 						</div>
 					
 						<div class="form-group col-md-6 col-sm-12 ">
-							<input class="btn btn-primary form-control" type="button" value="Register" onclick="location.href='register.php';">
+							<button class="hover-btn botonluis btn btn-primary form-control" onclick="location.href='register.php';">
+								<i class="fas fa-list"></i> Register
+							</button>
 						</div>
 					
 						<div class="form-group col-md-6 col-sm-12 ">
-							<button class="botonluis btn btn-primary form-control" onclick="location.href='luisortega.com.ve';">
+							<button class="hover-btn botonluis btn btn-primary form-control" onclick="location.href='luisortega.com.ve';">
 								<i class="fas fa-home"></i> <span>luisortega.com.ve</span>
 							</button>
 						</div>

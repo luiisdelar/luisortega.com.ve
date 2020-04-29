@@ -184,20 +184,6 @@ nav a:hover {
 	text-align: justify;
 }
 
-/*
-@media (min-width: 768px){
-	.container {
-		max-width: 992px;
-	}
-}
-
-@media (max-width: 767px){
-	.container {
-		max-width: 792px;
-	}
-
-}*/
-
 .articles {
 	margin: 10px;
 }
@@ -244,12 +230,11 @@ footer p {
 button.btn {
 	width: 70%;
 	transition: all 1.5s;
+	border: 2px solid #000;
 }
 
 button.btn:hover {
 	color: #262626;
 	background-color: #fff;
-	border: 2px solid;
-	border-color: #000;
-	transition: all 1.5s;
+	transition: all 1s;
 }

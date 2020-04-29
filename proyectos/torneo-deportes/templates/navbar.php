@@ -12,9 +12,9 @@
   <div class="justify-content-end">
     
     <div class="justify-content-end">
-      <a class="navbar-brand" href="">User: <?php echo $_SESSION["user"]; ?></a>
-          <input class="btn btn-outline-light my-2 my-sm-0" type="button" value="Return" onclick="location.href='logout.php';">
-          <input class="btn btn-outline-light my-2 my-sm-0" type="button" value="Logout" onclick="location.href='logout.php';">
+      <a class="btn btn-outline-light" href=""><i class="fa fa-user"></i> <?php echo $_SESSION["user"]; ?></a>
+      <input class="btn btn-outline-light my-2 my-sm-0" type="button" value="Return" onclick="location.href='logout.php';">
+      <input class="btn btn-outline-light my-2 my-sm-0" type="button" value="Logout" onclick="location.href='logout.php';">
     </div>
  
   </div>

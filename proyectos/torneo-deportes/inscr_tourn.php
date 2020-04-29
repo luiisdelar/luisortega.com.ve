@@ -20,31 +20,19 @@
 				include("admin_zone.php");		
 			}else{
 		?>
-
-			<h1 class="text-center">Inscription Tournament</h1>
-			
-
+		<h1 class="text-center">Inscription Tournament</h1>	
 		<form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-
 			<div class="form-group">
 				<label>Tournaments</label>
 				<select class="form-control" name="sel">
-
 					<?php 
-						
 						$registros=$base->query("select * from tournaments")->fetchAll(PDO::FETCH_OBJ);	
 						foreach ($registros as $x): 
-					
-					?>
-													
+					?>								
 						<option value='<?php echo $x->name_tourn;?>'> <?php echo $x->name_tourn;?> </option>
-
 					<?php 
-					
 						endforeach; 
-					
 					?>	
-
 				</select>
 			</div>	
 
@@ -63,35 +51,27 @@
 
 			</div>	
 			
-
-
 			<div class="row justify-content-center">
 				<div class="col-12">
 					<div class="form-group"> 
-					<input class="btn btn-primary form-control" type="submit" name="inscription" value="Inscription">
+					<input class="btn btn-primary form-control hover-btn" type="submit" name="inscription" value="Inscription">
 					</div>
 				</div>
 
 				<div class="col-12">
 					<div class="form-group">
-					<input class="btn btn-primary form-control" type="button" value="Tournaments List" onclick="location.href='list_tourn.php';">
+					<input class="btn btn-primary form-control hover-btn" type="button" value="Tournaments List" onclick="location.href='list_tourn.php';">
 					</div>
 				</div>
 			</div>
-
 			<?php 
-
 				if (isset($_POST["inscription"])) {
-					
 					$tourn=$_POST["sel"];
 					$part=$_POST["participants"];
 					$cat=$_POST["category"];
 					$user=$_SESSION["user"];
-
-
 					if(!is_numeric($part) || $part<=0 ){
 						?>
-
 						<!-- Modal -->
 						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 						  <div class="modal-dialog" role="document">
@@ -149,27 +129,17 @@
 						
 								<script>$('#exampleModal').modal('show');  </script>
 							<?php
-
 							exit();
-			
 						}
-
 					}
 
 					$sql="insert into inscriptions (name_tourn, participants, category, user) values ('$tourn','$part','$cat','$user')";
-
 					$resultado=$base->prepare($sql);
-
 					$resultado->execute();
-
 					echo "<script> alert('Equipo inscrito con exito'); location.href ='list_tourn.php'; </script>";
-
 				}
-				
 			 ?>
-			 
 		</form>
-		
 		<?php 
 			}
 		 ?>

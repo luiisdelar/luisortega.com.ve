@@ -106,6 +106,25 @@
 				
 				<div class="col-md-5 col-sm-10 align-middle col-12">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
+					 	<img class="card-img-top border border-dark" src="imgs/pro1.png" alt="Card image cap" height="">
+					  	<div class="card-body">
+					    	<h5 class="card-title text-center">Cable UNET</h5>
+					    	<p class="card-text">Sistema Web para la administración de servicios de cable, internet y telefonía.</p>
+							<div class="btn-card">
+								<button class="btn btn-neg form-control"
+										onclick="location.href='proyectos/cableunet/public';">Acceder</button>
+							</div>
+					    	<p class="card-text">
+					    		<small class="text-muted">
+									<i class="fab fa-laravel"></i> Laravel
+					    		</small>
+					    	</p>
+					 	</div>
+					</div>
+				</div>
+
+				<div class="col-md-5 col-sm-10 align-middle col-12">
+					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
 					 	<img class="card-img-top border border-dark" src="imgs/pro2.png" alt="Card image cap" height="">
 					  	<div class="card-body">
 					    	<button class="btn btn-dark form-control" onclick="location.href='proyectos/cableunet/';">Acceder</button>
@@ -119,22 +138,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-5 col-sm-10 align-middle col-12">
-					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
-					 	<img class="card-img-top border border-dark" src="imgs/pro1.png" alt="Card image cap" height="">
-					  	<div class="card-body">
-					    	<h5 class="card-title text-center">Cable UNET</h5>
-					    	<p class="card-text">Sistema Web para la administración de servicios de cable, internet y telefonía.</p>
-					    		<button disabled class="btn btn-dark form-control"
-										onclick="location.href='cableUNET/';">Acceder</button>
-					    	<p class="card-text">
-					    		<small class="text-muted">
-									<i class="fab fa-laravel"></i> Laravel
-					    		</small>
-					    	</p>
-					 	</div>
-					</div>
-				</div>
+				
 		</div>	
 	</div>
 </div>
