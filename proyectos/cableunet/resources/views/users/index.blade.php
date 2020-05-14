@@ -201,10 +201,7 @@
             
                 <div class="form-group"> 
                 <form action="{{ route('users/packchannel') }}"  method="POST">
-                    @php
-                        $ayuda=App\Cable::find(auth()->user()->cable_id)->packchannels;
-                    @endphp
-
+                    
                     <div class="form-group">
                         <div class="row">
                             <div class="col-md-3">

@@ -108,8 +108,10 @@
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
 					 	<img class="card-img-top border border-dark" src="imgs/pro1.png" alt="Card image cap" height="">
 					  	<div class="card-body">
-					    	<h5 class="card-title text-center">Cable UNET</h5>
-					    	<p class="card-text">Sistema Web para la administración de servicios de cable, internet y telefonía.</p>
+					    	<h4 class="card-title text-center">Cable UNET</h4>
+					    	<p class="card-text">Sistema Web para la administración de servicios de cable, internet y telefonía. 
+							En este proyecto el administrador puede crear diferentes servicios a vender asi como asignarle
+							a cada servicio su caracterista correspondiente </p>
 							<div class="btn-card">
 								<button class="btn btn-neg form-control"
 										onclick="location.href='proyectos/cableunet/public';">Acceder</button>
@@ -125,13 +127,20 @@
 
 				<div class="col-md-5 col-sm-10 align-middle col-12">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
-					 	<img class="card-img-top border border-dark" src="imgs/pro2.png" alt="Card image cap" height="">
+					 	<img class="card-img-top border border-dark" src="imgs/pro1.png" alt="Card image cap" height="">
 					  	<div class="card-body">
-					    	<button class="btn btn-dark form-control" onclick="location.href='proyectos/cableunet/';">Acceder</button>
-					    
+					    	<h4 class="card-title text-center">Calculadora de notas UNET</h4>
+					    	<p class="card-text"> En esta aplicación web podemos calcular la nota 
+							en base a los porcentajes de cada parcial, tambien dispone de la opción de 
+							calcular cuanto falta para pasar una materia en base al criterio de evaluación 
+							de la <a href="https://unet.edu.ve">UNET.</a> </p>
+							<div class="btn-card">
+								<button class="btn btn-neg form-control"
+										onclick="location.href='proyectos/calculadoraunet';">Acceder</button>
+							</div>
 					    	<p class="card-text">
 					    		<small class="text-muted">
-					    			<i class="fab fa-js"></i> Javascript
+									<i class="fab fa-js"></i> Javascript
 					    		</small>
 					    	</p>
 					 	</div>

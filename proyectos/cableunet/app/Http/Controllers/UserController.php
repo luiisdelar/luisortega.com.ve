@@ -77,7 +77,7 @@ class UserController extends Controller
         try{ 
             $user->save();              
         }catch(\Illuminate\Database\QueryException $ex){ 
-            flash('Email duplicate in system')->error()->important();
+            flash('Email duplicate in system'.$ex)->error()->important();
             return view('users/create');
         }
 
