@@ -80,7 +80,8 @@ function calcular(opcion){
 							'id': 'porc'+(i+1),
 							'class': 'form-control',
 							'aria-describedby': 'basic-addon3',
-							'type': 'number'
+							'type': 'number',
+							'onkeypress': 'return check(event)'
 					})
 				)
 			)
@@ -144,18 +145,52 @@ function calcular(opcion){
 	
 	}	
 
-	$('.row-1').append(
+	
+	if(opcion==0){
+		$('.row-1').append(
+			$('<div>',{
+				'class': 'row ancho d-flex justify-content-center'
+			}).append(
+				$('<div>',{
+					'class': 'col-md-4 col-sm-10 form-group'
+				}).append(
+					$('<button>',{
+						'class': 'form-control btn btn-primary hover-person calcular',
+						'onclick': 'calculos('+select+')',
+						'text': 'Calcular'	
+					})
+				)
+			)
+		);
+	}else{
+		$('.row-1').append(
+			$('<div>',{
+				'class': 'row ancho d-flex justify-content-center'
+			}).append(
+				$('<div>',{
+					'class': 'col-md-4 col-sm-10 form-group'
+				}).append(
+					$('<button>',{
+						'class': 'form-control btn btn-primary hover-person calcular',
+						'onclick': 'cuantoFalta('+select+')',
+						'text': 'Calcular'	
+					})
+				)
+			)
+		);
+	}
+
+	$('.row-1').append(	
 		$('<div>',{
 			'class': 'row ancho d-flex justify-content-center'
 		}).append(
 			$('<div>',{
-				'class': 'col-4 form-group',
-				'data-aos': 'fade-up'
+				'class': 'col-md-4 col-sm-10 form-group'
 			}).append(
 				$('<button>',{
 					'class': 'form-control btn btn-primary hover-person calcular',
-					'onclick': 'calculos('+select+')',
-					'text': 'Calcular'	
+					'onclick': 'borrar('+select+')',
+					'text': 'Borrar'	
 				})
 			)
 		),
@@ -163,8 +198,7 @@ function calcular(opcion){
 			'class': 'row ancho d-flex justify-content-center'
 		}).append(
 			$('<div>',{
-				'class': 'col-4 form-group',
-				'data-aos': 'fade-up'
+				'class': 'col-md-4 col-sm-10 form-group'
 			}).append(
 				$('<button>',{
 					'class': 'form-control btn btn-primary hover-person',
@@ -239,7 +273,8 @@ function iniciar(){
  $('#container-2').append(
  	$('<h1>',{
  		'class': 'text-center mt-5',
- 		'text': 'Calculadora de notas'
+		'text': 'Calculadora de notas',
+		'data-aos': 'fade-down'
  	}),
  	$('<div>',{
  		'class': 'row row-1'
@@ -311,6 +346,7 @@ function calculos(parciales) {
 	for (var i = 0; i < parciales; i++) {
 		notaFinal += (parseInt(document.getElementById('porc'+(i+1)).value)*convert(parseInt(document.getElementById('nota'+(i+1)).value)))/100;
 	}
+	notaFinal = notaFinal.toFixed(2);
 	if (notaFinal >= 4.5 && !band){
 		$('.nota-final').addClass('text-success');
 		$('.nota-final').text('Nota Final: '+notaFinal);
@@ -322,18 +358,55 @@ function calculos(parciales) {
 	$('#modal-notes').modal('show');
 }	
 
-function cuantoFalta() {
-	var select = parseInt(document.getElementById('seleccion-2').value);
-
-	$('#a').empty();
-	$('#container-2').empty();
-	$('.row-1').empty();
-
-	
-	for (var i = 0; i < select ; i++) {
-		
+function cuantoFalta(parciales) {
+//cuantoFalta(3)
+	//parciales += 1;
+	var contNotas = 0, porcentajes = 0, notaFinal = 0, band = false, bariable = 0, x = 0;
+//cuantoFalta(4)
+	for (var i = 0; i < parciales; i++) {	
+		contNotas = parseInt(document.getElementById('nota'+(i+1)).value);
+		porcentajes += parseInt(document.getElementById('porc'+(i+1)).value);		
+	}
+	if (contNotas > 100 || contNotas < 0) {
+		$('.nota-final').text('Error en notas');
+		band=true;
+	}
+	if (porcentajes > 99 || porcentajes < 1) {
+		$('.nota-final').text('Error en suma de porcentajes:');
+		band=true;
 	}
 	
+	for (var i = 0; i < parciales ; i++) {
+		notaFinal += (parseInt(document.getElementById('porc'+(i+1)).value)*convert(parseInt(document.getElementById('nota'+(i+1)).value)))/100;
+	}
+	
+	if(notaFinal >= 4.50 && !band){
+		$('.nota-final').addClass('text-success');
+		$('.nota-final').text('¡Ya tienes la materia aprobada con '+notaFinal+'!');
+		band=true;
+	}
+
+	porcentajes=100-porcentajes;
+	
+	while(bariable < 4.50){
+		bariable = porcentajes*convert(x)/100;		
+		bariable += notaFinal;
+		x++;
+	}
+	console.log(bariable);
+	if(!band){
+		$('.nota-final').addClass('text');
+		$('.nota-final').text('Debes sacar '+(x-1)+' para pasarla con '+bariable);
+	}
+
+	$('#modal-notes').modal('show');
+}
+
+function borrar(select){
+	for (var i = 0; i < select ; i++) {
+		$('#nota'+(i+1)).val('');
+		$('#porc'+(i+1)).val('');
+	}
 }
 
 function convert(i){
