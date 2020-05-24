@@ -333,12 +333,13 @@ function calculos(parciales) {
 		contNotas = parseInt(document.getElementById('nota'+(i+1)).value);
 		porcentajes += parseInt(document.getElementById('porc'+(i+1)).value);		
 	}
+	$('#nota-final').addClass('text-center');
 	if (contNotas > 100 || contNotas < 0) {
-		$('.nota-final').text('Error en notas');
+		$('#nota-final').text('Error en notas.');
 		band=true;
 	}
 	if (porcentajes != 100) {
-		$('.nota-final').text('Error en suma de porcentajes:');
+		$('#nota-final').text('Error en suma de porcentajes.');
 		band=true;
 	}
 	//			|||||||||
@@ -347,13 +348,15 @@ function calculos(parciales) {
 		notaFinal += (parseInt(document.getElementById('porc'+(i+1)).value)*convert(parseInt(document.getElementById('nota'+(i+1)).value)))/100;
 	}
 	notaFinal = notaFinal.toFixed(2);
+	$('#nota-final').removeClass();
+	$('#nota-final').addClass('text-center');
 	if (notaFinal >= 4.5 && !band){
-		$('.nota-final').addClass('text-success');
-		$('.nota-final').text('Nota Final: '+notaFinal);
+		$('#nota-final').addClass('text-success');
+		$('#nota-final').text('Nota Final: '+notaFinal);
 	}
 	if (notaFinal < 4.5 && !band ){
-		$('.nota-final').addClass('text-danger');
-		$('.nota-final').text('Nota Final: '+notaFinal);
+		$('#nota-final').addClass('text-danger');
+		$('#nota-final').text('Nota Final: '+notaFinal);
 	}
 	$('#modal-notes').modal('show');
 }	
@@ -367,36 +370,50 @@ function cuantoFalta(parciales) {
 		contNotas = parseInt(document.getElementById('nota'+(i+1)).value);
 		porcentajes += parseInt(document.getElementById('porc'+(i+1)).value);		
 	}
-	if (contNotas > 100 || contNotas < 0) {
-		$('.nota-final').text('Error en notas');
+	console.log(contNotas);
+	if (contNotas > 100 || contNotas <= 0 || !contNotas) {
+		$('#nota-final').addClass('text-center');
+		$('#nota-final').text('Error en notas.');
 		band=true;
 	}
-	if (porcentajes > 99 || porcentajes < 1) {
-		$('.nota-final').text('Error en suma de porcentajes:');
+	if (porcentajes > 99 || porcentajes < 1 || !porcentajes ) {
+		$('#nota-final').addClass('text-center');
+		$('#nota-final').text('Error en suma de porcentajes.');
 		band=true;
 	}
-	
+	console.log(porcentajes);
 	for (var i = 0; i < parciales ; i++) {
 		notaFinal += (parseInt(document.getElementById('porc'+(i+1)).value)*convert(parseInt(document.getElementById('nota'+(i+1)).value)))/100;
 	}
 	
 	if(notaFinal >= 4.50 && !band){
-		$('.nota-final').addClass('text-success');
-		$('.nota-final').text('¡Ya tienes la materia aprobada con '+notaFinal+'!');
+		$('#nota-final').removeClass();
+		$('#nota-final').addClass('text-center');
+		$('#nota-final').addClass('text-success');
+		$('#nota-final').text('¡Ya tienes la materia aprobada con '+notaFinal+'!');
 		band=true;
 	}
 
 	porcentajes=100-porcentajes;
 	
-	while(bariable < 4.50){
+	while(bariable < 4.50 && !band){
 		bariable = porcentajes*convert(x)/100;		
 		bariable += notaFinal;
 		x++;
+		if(x == 101){
+			$('#nota-final').removeClass();
+			$('#nota-final').addClass('text-center');
+			$('#nota-final').addClass('text-danger');
+			$('#nota-final').text('Estas fuera de escala para pasar la materia.');
+			band=true;
+		}
 	}
-	console.log(bariable);
+
 	if(!band){
-		$('.nota-final').addClass('text');
-		$('.nota-final').text('Debes sacar '+(x-1)+' para pasarla con '+bariable);
+		$('#nota-final').removeClass();
+		$('#nota-final').addClass('text-center');
+		$('#nota-final').addClass('text');
+		$('#nota-final').text('Debes sacar '+(x-1)+' para pasarla con '+bariable);
 	}
 
 	$('#modal-notes').modal('show');
@@ -492,6 +509,6 @@ function convert(i){
     if(i==92){ retorno=8.7; }
     if(i==93){ retorno=8.8; }
     if(i==94){ retorno=8.9; }
-    if(i==95 ||i>95){ retorno=9.0; }
+    if(i==95 || i>95){ retorno=9.0; }
     return retorno;   
 }

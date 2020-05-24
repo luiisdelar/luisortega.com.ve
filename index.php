@@ -55,8 +55,7 @@
 							En los proyectos que se muestran se podra ver el uso de HTML, CSS3, 
 							PHP, Javascript, SQL, Python, Wordpress, en mi repositorio de Git tambien se 
 							pueden ver algunas cosas hechas con C, C++, Java, NodeJs, ademas del uso de 
-							algunos Frameworks como Boostrap para CSS, Laravel para PHP, actualmente
-							en aprendizaje de la libreria creada por Facebook React JS, entre otros, 
+							algunos Frameworks como Boostrap de CSS, Laravel de PHP, entre otros, 
 							a medida de lo posible se ira adicionando contenido que aun esta en etapa de desarrollo.
 						</p>
 					</article>
