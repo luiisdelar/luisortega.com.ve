@@ -49,14 +49,27 @@
 					<h3 class="m-4 text-center">Creación del sitio 🔧</h3>  
 					<article class="mb-4">
 						<p>			
-							La idea de este sitio es mostrar algunos proyectos, entre otras
-							cosas hechas por mi, con diferentes tecnologias y lenguajes de programación 
-							(ademas de ver como era la subida de una página a un servidor en internet). 
-							En los proyectos que se muestran se podra ver el uso de HTML, CSS3, 
-							PHP, Javascript, SQL, Python, Wordpress, en mi repositorio de Git tambien se 
-							pueden ver algunas cosas hechas con C, C++, Java, NodeJs, ademas del uso de 
-							algunos Frameworks como Boostrap de CSS, Laravel de PHP, entre otros, 
-							a medida de lo posible se ira adicionando contenido que aun esta en etapa de desarrollo.
+							Bienvenidos a mi sitio web creado y construido desde cero por mí, 
+							la idea principal de este sitio es usar el mismo como portafolio personal 
+							para mostrar algunos proyectos, herramientas, entre otras cosas, hechas con 
+							diferentes tecnologías y lenguajes de programación. 
+						</p>		
+						<p>
+							Además de posicionar mi presencia en internet, este sitio tiene como motivo 
+							expresar algunas ideas (como un tipo Blog) las cuales aun están en etapa de 
+							desarrollo hasta tener una idea clara del objetivo de esa sección. Sin ánimos 
+							de aludir mi conexión a internet la cual es muy poca, los cambios en este sitio 
+							no serán muchos por los momentos.
+						</p>
+						<p>
+							En los proyectos que se muestran se puede ver el uso de HTML, CSS, 
+							PHP, Javascript y SQL. También hay algunas cosas en Python, Wordpress, 
+							C, C++, Java, NodeJs y el preprocesador de CSS SASS las cuales se pueden ver en mi 
+							<a target="_blank" href="https://github.com/luiisdelar">repositorio en GitHub</a>. Algunos 
+							Frameworks en los cuales tengo experiencia son: Boostrap de CSS, Laravel de PHP, 
+							y actualmente aprendiendo usar React JS. Cabe destacar que el uso de Javascript 
+							tanto sus Frameworks como tecnologías pintan más dinámicas que las de PHP, pero es 
+							una simple e irónica opinión porque aquí PHP > Js.
 						</p>
 					</article>
 				</div>	
@@ -146,7 +159,27 @@
 					</div>
 				</div>
 
-				
+				<div class="col-md-5 col-sm-10 align-middle col-12">
+					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
+					 	<img class="card-img-top border border-dark" src="imgs/pro1.png" alt="Card image cap" height="">
+					  	<div class="card-body">
+					    	<h4 class="card-title text-center">Inventario & Facturacion </h4>
+					    	<p class="card-text"> Aplicacion de inventario </p>
+							<div class="btn-card">
+								<button class="btn btn-neg form-control"
+										onclick="location.href='proyectos/inventario-facturacion';">Acceder</button>
+							</div>
+					    	<p class="card-text">
+					    		<small class="text-muted">
+					    			<i class="fab fa-html5"></i> HTML
+									<i class="fab fa-css3-alt"></i> CSS
+									<i class="fab fa-php"></i> PHP
+									<i class="fas fa-database"></i> SQL
+					    		</small>
+					    	</p>
+					 	</div>
+					</div>
+				</div>
 		</div>	
 	</div>
 </div>
