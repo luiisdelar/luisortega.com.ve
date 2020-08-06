@@ -11,27 +11,29 @@ use App\Telephone;
 use App\Packservice;
 use App\Plan;
 use App\Channel;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {   
 
-    public function __construct(){
+    /*public function __construct(){
         $this->middleware('auth');
     }
-    /**
+    *
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
+    {   
+        $user = Auth::user();
         $cable=Cable::all();
         $net=Internet::all();
         $tlf=Telephone::all();
         $pack=Packservice::all();
         $plan=Plan::all();
         $cha=Channel::all();
-        return view('users/index',compact("cable","net","tlf","pack","plan","cha"));
+        return view('users/index',compact("cable","net","tlf","pack","plan","cha",'user'));
     }
 
     public function packChannel(Request $request){

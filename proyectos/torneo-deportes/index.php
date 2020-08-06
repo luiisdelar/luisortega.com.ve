@@ -67,11 +67,12 @@
 								<i class="fas fa-list"></i> Register
 							</button>
 						</div>
-					
+						
 						<div class="form-group col-md-6 col-sm-12 ">
-							<button class="hover-btn botonluis btn btn-primary form-control" onclick="location.href='luisortega.com.ve';">
+							<button class="hover-btn botonluis btn btn-primary form-control" onclick="location.href='../../';">
 								<i class="fas fa-home"></i> <span>luisortega.com.ve</span>
 							</button>
+							
 						</div>
 			
 				</form>
@@ -80,3 +81,5 @@
 	</div>			
 
 <?php require("templates/endpage.php"); ?>
+
+			

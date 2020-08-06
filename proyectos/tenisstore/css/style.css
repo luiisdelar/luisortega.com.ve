@@ -1,0 +1,152 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.title-oscuro {
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.label-w {
+    color: white;
+}
+
+.bg-oscuro {
+    background-color: black;
+}
+
+.login-boxx {
+    margin-top: 10%;
+}
+
+.box {
+    background-color: black;
+    box-shadow: 1rem .8rem 1.7rem rgba(0, 0, 0, 0.5);
+}
+
+.mt {
+    margin-top: 20px;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #6c757d;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #034a60;
+}
+
+.pagination .page-item .page-link {
+    color: #034a60;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #034a60;
+}
+
+.pagination .page-item .page-link:hover  {
+    color: #fff;
+    cursor: pointer;
+    background-color: #034a60;
+    border-color: #034a60;
+    transition: .5s;
+}
+
+.pagination .page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #034a60;
+    border-color: #034a60;
+}
+
+.btn-cust {
+    background-color: #034a60;
+    color: #fff;
+    width: 100%;
+    transition: .5s;
+}
+
+.btn-cust2 {
+    background-color: #e13131;
+    color: #fff;
+    width: 100%;
+    transition: .5s;
+}
+
+.btn-cust2:hover {
+    background-color: #034a60;
+    transition: .5s;
+    color: #fff6f6; 
+}
+
+.btn-cust:hover {
+    background-color: #e13131;
+    transition: .5s;
+    color: #fff6f6; 
+}
+
+nav form .buscador {
+    padding-top: 3px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    border: 1px solid white;
+    margin-bottom: 0px;
+}
+
+.verde {
+    color: #03b003;
+}
+
+.dot {
+    border: 6px dotted red;
+}
+
+.dot2 {
+    border-top: 3px dotted #03b003;
+}
+
+.dot3 {
+    border-top: 2px dotted black;
+}
+
+.dot4 {
+    border-bottom: 2px dotted black;
+}
+
+.caja {
+    padding-bottom: 30px;
+    padding-top: 15px;
+    background-color: #b2ceb9;
+    border: 2px dotted black
+}
+
+
+table.table-dark {
+    background-color: #24232be6 !important;
+}
+
+@media (max-width: 600px){
+    nav.navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    nav.navbar a, nav.navbar form {
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (max-width: 470px){
+    nav .buscador {
+        width: 70%;
+    }
+    nav .bot-busc{
+        width: 28%;
+    }
+    nav .bot-salir {
+        width: 99%;
+    }
+}

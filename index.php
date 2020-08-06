@@ -24,7 +24,7 @@
 
 			<a class="efecto-nav mail nav-position" href="mailto:luisortegadlr@gmail.com">
 				<i class="mail fas fa-at fa-2x"></i> 
-				<span class="d-block">Contacto</span>
+				<span class="d-block">Email</span>
 			</a>
 
 			<a class="efecto-nav instagram nav-position" href="https://instagram.com/luiisdelar" target="_blank">
@@ -49,27 +49,25 @@
 					<h3 class="m-4 text-center">Creación del sitio 🔧</h3>  
 					<article class="mb-4">
 						<p>			
-							Bienvenidos a mi sitio web creado y construido desde cero por mí, 
-							la idea principal de este sitio es usar el mismo como portafolio personal 
+							Bienvenidos a este sitio web creado y construido desde cero por mí, 
+							la idea principal es usar el mismo como portafolio personal 
 							para mostrar algunos proyectos, herramientas, entre otras cosas, hechas con 
 							diferentes tecnologías y lenguajes de programación. 
 						</p>		
-						<p>
+						<!--p>
 							Además de posicionar mi presencia en internet, este sitio tiene como motivo 
 							expresar algunas ideas (como un tipo Blog) las cuales aun están en etapa de 
 							desarrollo hasta tener una idea clara del objetivo de esa sección. Sin ánimos 
 							de aludir mi conexión a internet la cual es muy poca, los cambios en este sitio 
 							no serán muchos por los momentos.
-						</p>
+						</p-->
 						<p>
 							En los proyectos que se muestran se puede ver el uso de HTML, CSS, 
-							PHP, Javascript y SQL. También hay algunas cosas en Python, Wordpress, 
-							C, C++, Java, NodeJs y el preprocesador de CSS SASS las cuales se pueden ver en mi 
+							PHP, Javascript, JQuery y SQL. También hay algunas cosas en Python, Wordpress (las cuales
+							no son muchas),	C, C++, Java, NodeJs y el preprocesador de CSS SASS las cuales se pueden ver en mi 
 							<a target="_blank" href="https://github.com/luiisdelar">repositorio en GitHub</a>. Algunos 
 							Frameworks en los cuales tengo experiencia son: Boostrap de CSS, Laravel de PHP, 
-							y actualmente aprendiendo usar React JS. Cabe destacar que el uso de Javascript 
-							tanto sus Frameworks como tecnologías pintan más dinámicas que las de PHP, pero es 
-							una simple e irónica opinión porque aquí PHP > Js.
+							y actualmente aprendiendo usar la libreria React JS.
 						</p>
 					</article>
 				</div>	
@@ -87,7 +85,7 @@
 			<div class="row justify-content-center align-items-center">	
 				<div class="col-md-5 col-sm-10 col-12">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
-					 	<img class="card-img-top border border-dark" src="imgs/pro3.png" alt="Card image cap" height="">
+					 	<img class="card-img-top border border-dark" src="imgs/img1.png" alt="imagen de proyecto" height="">
 					  	<div class="card-body">
 					    	<h4 class="card-title text-center">Sistema de Torneos</h4>
 					    	<p class="card-text">
@@ -118,7 +116,7 @@
 				
 				<div class="col-md-5 col-sm-10 align-middle col-12">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
-					 	<img class="card-img-top border border-dark" src="imgs/pro1.png" alt="Card image cap" height="">
+					 	<img class="card-img-top border border-dark" src="imgs/img2.png" alt="imagen de proyecto" height="">
 					  	<div class="card-body">
 					    	<h4 class="card-title text-center">Cable UNET</h4>
 					    	<p class="card-text">Sistema Web para la administración de servicios de cable, internet y telefonía. 
@@ -139,7 +137,7 @@
 
 				<div class="col-md-5 col-sm-10 align-middle col-12">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
-					 	<img class="card-img-top border border-dark" src="imgs/pro1.png" alt="Card image cap" height="">
+					 	<img class="card-img-top border border-dark" src="imgs/img3.png" alt="imagen de proyecto" height="">
 					  	<div class="card-body">
 					    	<h4 class="card-title text-center">Calculadora de notas UNET</h4>
 					    	<p class="card-text"> En esta aplicación web podemos calcular la nota 
@@ -161,13 +159,21 @@
 
 				<div class="col-md-5 col-sm-10 align-middle col-12">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
-					 	<img class="card-img-top border border-dark" src="imgs/pro1.png" alt="Card image cap" height="">
+					 	<img class="card-img-top border border-dark" src="imgs/img4.png" alt="imagen de proyecto" height="">
 					  	<div class="card-body">
-					    	<h4 class="card-title text-center">Inventario & Facturacion </h4>
-					    	<p class="card-text"> Aplicacion de inventario </p>
+					    	<h4 class="card-title text-center">Tenis Store</h4>
+					    	<p class="card-text">
+								Aplicación web de tipo facturacion/inventario donde
+								siendo el administrador podemos, registrar empleados, agregar, eliminar
+								o modificar productos en la tienda (en este caso la tienda ficticia es de 
+								zapatos deportivos). Y a su vez siendo empleado podemos facturas los productos a los 
+								clientes los cuales podemos registrar tambien desde una interfaz web. El 
+								administrador puede generar reportes en pdf de ciertas estadisticas acerca
+								de los productos facturados y añadidos en la tienda
+								</p>
 							<div class="btn-card">
 								<button class="btn btn-neg form-control"
-										onclick="location.href='proyectos/inventario-facturacion';">Acceder</button>
+										onclick="location.href='proyectos/tenisstore';">Acceder</button>
 							</div>
 					    	<p class="card-text">
 					    		<small class="text-muted">

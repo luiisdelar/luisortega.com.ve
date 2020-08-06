@@ -11,7 +11,7 @@
                 <div class="col-md">
                     <form action="{{ route('user') }}" method="GET">
                         <div class="form-group">
-                            <input readonly type="button" value="User: {{ auth()->user()->username }}" class="btn form-control">
+                            <input readonly type="button" value="User: {{ $user->username }}" class="btn form-control">
                         </div>
                         {{ csrf_field() }}
                     </form>    
@@ -20,11 +20,11 @@
                 <div class="col-md">
                     <div class="form-group">    
                     @php
-                        $p=App\Packservice::find(auth()->user()->packservice_id);
-                        $c=App\Cable::find(auth()->user()->cable_id);
-                        $i=App\Internet::find(auth()->user()->internet_id);
-                        $t=App\Telephone::find(auth()->user()->telephone_id);
-                        $pch=App\Packchannel::find(auth()->user()->packchannel_id);
+                        $p=App\Packservice::find($user->packservice_id);
+                        $c=App\Cable::find($user->cable_id);
+                        $i=App\Internet::find($user->internet_id);
+                        $t=App\Telephone::find($user->telephone_id);
+                        $pch=App\Packchannel::find($user->packchannel_id);
                         $total=0;
                         if(isset($pch)){  $total+=$pch->price;  }
                         if(isset($p)){  $total+=$p->price;  }
