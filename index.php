@@ -5,9 +5,9 @@
 
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top fondo-nav" id="menu">
 		
-		<a class="navbar-brand labelmenu mb-0" href="#" data-toggle="collapse" data-target="#navbarSupportedContent" >Menu</a>
+		<a class="navbar-brand labelmenu mb-0" href="#" data-toggle="collapse" data-target="#navbarSupportedContent" >< Luis / ></a>
 		
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+		<button class="navbar-toggler boton-menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		
@@ -45,7 +45,7 @@
 	<div class="container-fluid">	
 		<div class="articles m-0"> 	
 			<div class="row justify-content-center">
-				<div class="col-md-7 col-sm-12">
+				<div class="col-lg-7 col-md-12 col-sm-12">
 					<h3 class="m-4 text-center">Creación del sitio 🔧</h3>  
 					<article class="mb-4">
 						<p>			
@@ -54,20 +54,14 @@
 							para mostrar algunos proyectos, herramientas, entre otras cosas, hechas con 
 							diferentes tecnologías y lenguajes de programación. 
 						</p>		
-						<!--p>
-							Además de posicionar mi presencia en internet, este sitio tiene como motivo 
-							expresar algunas ideas (como un tipo Blog) las cuales aun están en etapa de 
-							desarrollo hasta tener una idea clara del objetivo de esa sección. Sin ánimos 
-							de aludir mi conexión a internet la cual es muy poca, los cambios en este sitio 
-							no serán muchos por los momentos.
-						</p-->
 						<p>
 							En los proyectos que se muestran se puede ver el uso de HTML, CSS, 
-							PHP, Javascript, JQuery y SQL. También hay algunas cosas en Python, Wordpress (las cuales
-							no son muchas),	C, C++, Java, NodeJs y el preprocesador de CSS SASS las cuales se pueden ver en mi 
-							<a target="_blank" href="https://github.com/luiisdelar">repositorio en GitHub</a>. Algunos 
+							PHP, Javascript, JQuery, el preprocesador de CSS SASS y SQL. También hay algunas cosas en C, C++, Java, NodeJs, 
+							las cuales	no son muchas y aun se encuentran en proceso de aprendizaje, algunos de estos
+							codigos se pueden ver en mi 
+							<a target="_blank" href="https://github.com/luiisdelar">repositorio en GitHub</a>. Los 
 							Frameworks en los cuales tengo experiencia son: Boostrap de CSS, Laravel de PHP, 
-							y actualmente aprendiendo usar la libreria React JS.
+							y actualmente aprendiendo usar la libreria de Facebook, ReactJS.
 						</p>
 					</article>
 				</div>	
@@ -83,7 +77,7 @@
 			</div>
 
 			<div class="row justify-content-center align-items-center">	
-				<div class="col-md-5 col-sm-10 col-12">
+				<div class="col-lg-5 col-md-8 col-sm-12">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
 					 	<img class="card-img-top border border-dark" src="imgs/img1.png" alt="imagen de proyecto" height="">
 					  	<div class="card-body">
@@ -114,7 +108,7 @@
 					</div>
 				</div>
 				
-				<div class="col-md-5 col-sm-10 align-middle col-12">
+				<div class="col-lg-5 col-md-8 col-sm-12 align-middle">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
 					 	<img class="card-img-top border border-dark" src="imgs/img2.png" alt="imagen de proyecto" height="">
 					  	<div class="card-body">
@@ -123,8 +117,7 @@
 							En este proyecto el administrador puede crear diferentes servicios a vender asi como asignarle
 							a cada servicio su caracterista correspondiente </p>
 							<div class="btn-card">
-								<button class="btn btn-neg form-control"
-										onclick="location.href='proyectos/cableunet/public';">Acceder</button>
+								<button class="btn btn-neg disabled form-control">En Construcción</button>
 							</div>
 					    	<p class="card-text">
 					    		<small class="text-muted">
@@ -135,7 +128,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-5 col-sm-10 align-middle col-12">
+				<div class="col-lg-5 col-md-8 col-sm-12 align-middle">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
 					 	<img class="card-img-top border border-dark" src="imgs/img3.png" alt="imagen de proyecto" height="">
 					  	<div class="card-body">
@@ -157,7 +150,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-5 col-sm-10 align-middle col-12">
+				<div class="col-lg-5 col-md-8 col-sm-12 align-middle">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
 					 	<img class="card-img-top border border-dark" src="imgs/img4.png" alt="imagen de proyecto" height="">
 					  	<div class="card-body">

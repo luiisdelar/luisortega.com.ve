@@ -3,12 +3,12 @@
 }
 
 nav {
-    background-color: #c9c7c7;
+    background-color: #4292b9a3;
 }
 
 .logounet {
     border-radius: 4%;
-    background-color: #c9c7c7;
+    background-color: #fff;
 }
 
 .navboton{
@@ -16,6 +16,13 @@ nav {
     color: black;
 }
 
+
 .spc {
     padding-top: 1%;
+}
+
+body {
+    background-image: url('../fondo1.jpg');
+	height: 100vh;
+	background-size: cover;
 }

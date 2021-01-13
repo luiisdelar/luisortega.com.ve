@@ -15,7 +15,7 @@
 </script> -->
 
 <footer class=" text-center p-2">
-    <p>Luis <?php echo date('Y'); ?> &copy</p>
+    <p>Luis Ortega <?php echo date('Y'); ?> &copy</p>
 </footer>
 </body>
 </html>

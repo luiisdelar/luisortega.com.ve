@@ -4,20 +4,11 @@
         <a class="navbar-brand" href="{!!route('start')!!}">
 @endsection
 
-@section("header")
-       <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                  <li class="nav-item active">
-                      <a class="nav-link" target=blank href="http://www.luisortega.com.ve">>> luisortega.com.ve <<<span class="sr-only">(current)</span></a>
-                  </li>
-              </ul>
-       </div>
-@endsection
 
 @section("container")
 
-    <div class="row justify-content-center">
-        <div class="col-md-4 col-md-offset-4">
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-12 col-lg-6 col-md-offset-4">
             <h1 class="text-center">Access Application</h1>
             @include('flash::message')
             <form action="{{ route('login') }}" method="POST">

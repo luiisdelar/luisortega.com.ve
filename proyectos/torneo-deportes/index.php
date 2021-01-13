@@ -35,7 +35,11 @@
 						    </div>
 						</div>
 					</div>
-						<script>$('#exampleModal').modal('show');  </script>
+						<script>
+							window.onload=function(){
+								$('#exampleModal').modal('show');
+							}
+						</script>
 					<?php	
 				}		
 		}	
@@ -62,17 +66,16 @@
 							</button>
 						</div>
 					
-						<div class="form-group col-md-6 col-sm-12 ">
-							<button class="hover-btn botonluis btn btn-primary form-control" onclick="location.href='register.php';">
+						<div class="form-group col-md-6 col-sm-12 color-a">
+							<a class="hover-btn botonluis btn btn-primary form-control" onclick="location.href='register.php';">
 								<i class="fas fa-list"></i> Register
-							</button>
+							</a>
 						</div>
 						
-						<div class="form-group col-md-6 col-sm-12 ">
-							<button class="hover-btn botonluis btn btn-primary form-control" onclick="location.href='../../';">
-								<i class="fas fa-home"></i> <span>luisortega.com.ve</span>
-							</button>
-							
+						<div class="form-group col-md-6 col-sm-12 color-a">
+							<a class="hover-btn botonluis btn btn-primary form-control" onclick="location.href='../../';">
+								<i class="fas fa-home"></i> <span>Volver</span>
+							</a>
 						</div>
 			
 				</form>

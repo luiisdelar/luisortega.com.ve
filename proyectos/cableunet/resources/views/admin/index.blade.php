@@ -7,42 +7,42 @@
 @section("header")
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <div class="navbar-nav row">
-                <div class="col-md form-group">
+                <div class="col-md d-flex align-items-center">
                     <input type="button" class="btn form-control" value="Admin: {{ auth()->user()->username }}">
                 </div>
               
-                <div class="col-md">
+                <div class="col-md d-flex align-items-center">
                     <form action="{{ route('admin/plans') }}" method="GET">
-                        <div class="form-group">
+                        
                             <input type="submit" value="Change of plans" class="btn btn-primary form-control">
-                        </div>
+                       
                         {{ csrf_field() }}
                     </form>    
                 </div>
 
-                <div class="col-md">
+                <div class="col-md d-flex align-items-center">
                     <form action="{{ route('invoice') }}" method="GET">
-                        <div class="form-group">
+                        
                             <input class="btn btn-primary form-control" type="submit" value="List of invoices">
-                        </div>
+                        
                         {{ csrf_field() }}
                     </form>
                 </div>
 
-                <div class="col-md">
+                <div class="col-md d-flex align-items-center">
                     <form action="{{ route('members') }}" method="GET">
-                        <div class="form-group">
+                        
                             <input class="btn btn-success form-control" type="submit" value="Users">
-                        </div>
+                        
                         {{ csrf_field() }}
                     </form>
                 </div>
 
-                <div class="col-md">
+                <div class="col-md d-flex align-items-center">
                     <form action="{{ route('logout') }}" method="POST">
-                        <div class="form-group">
+                       
                             <input class="btn btn-danger form-control" type="submit" value="Logout">
-                        </div>
+                        
                         {{ csrf_field() }}
                     </form>
                 </div>
@@ -77,7 +77,7 @@
 
                 <div class="col-md-4">        
                     <div class="form-group">
-                        <label>Price</label>
+                        <label>Price ($)</label>
                         <input class="form-control" required type="number" placeholder="price $" name="price">
                     </div>            
                 </div>
@@ -113,14 +113,14 @@
 
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label>Velocity</label>
+                        <label>Velocity (Mbps)</label>
                         <input class="form-control" type="number" required placeholder="velocity" name="speed">
                     </div>
                 </div>
 
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label>Price</label>
+                        <label>Price ($)</label>
                         <input class="form-control" type="number" required placeholder="price $" name="price">
                     </div>
                 </div>

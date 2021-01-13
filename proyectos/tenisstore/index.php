@@ -45,14 +45,7 @@
     <div>  
         <a class="navbar-brand" href="index.php">Tenis Store</a>
     </div>  
-    <form action="buscarproducto.php" method="POST">
-        <div class="justify-content-end">
-            <div class="justify-content-end">
-                <input type="text" placeholder="Nombre Producto" name="codigo"  class="buscador">
-                <input class="btn btn-outline-light" type="submit" name="buscar" value="Buscar">
-            </div>
-        </div>
-    </form>	
+    
 </nav>
 
 <div class="login-box login-boxx container d-flex justify-content-center">
@@ -81,7 +74,7 @@
             </div>
             <div class="form-group col-12 ">
                 <button class="btn btn-cust2" onclick="location.href='../../';">
-                    <i class="fas fa-home"></i> <span>luisortega.com.ve</span>
+                   Volver
                 </button>
             </div>
         </div>
