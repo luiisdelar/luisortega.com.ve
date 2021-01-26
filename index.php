@@ -1,9 +1,10 @@
 <?php 
+	include "config.php";
 	require("templates/header.php"); 	  
 ?>
 
 
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top fondo-nav" id="menu">
+	<!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top fondo-nav" id="menu">
 		
 		<a class="navbar-brand labelmenu mb-0" href="#" data-toggle="collapse" data-target="#navbarSupportedContent" >< Luis / ></a>
 		
@@ -32,36 +33,28 @@
 				<span class="d-block">Instagram</span> 
 			</a>
 		</div>
-	</nav>
+	</nav> -->
 
 	<div class="container-fluid p-0">
 		<div class="row m-0">
 			<div class="col-12 banner">
-				<h1 class="text-center display-6"><span>Luis Eduardo Ortega </span><span>De La Rosa</span></h1>	
+				<h1 data-aos="fade-right" class="text-center display-6"><span>Luis Eduardo Ortega </span><span>De La Rosa</span></h1>	
 			</div>
 		</div>
 	</div>
 
 	<div class="container-fluid">	
-		<div class="articles m-0"> 	
+		
+	<div class="articles m-0"> 	
 			<div class="row justify-content-center">
 				<div class="col-lg-7 col-md-12 col-sm-12">
-					<h3 class="m-4 text-center">Creación del sitio 🔧</h3>  
+					<h2 class="m-4 text-center"><?php echo $lang['titulo-1'] ?> 🔧</h2>  
 					<article class="mb-4">
 						<p>			
-							Bienvenidos a este sitio web creado y construido desde cero por mí, 
-							la idea principal es usar el mismo como portafolio personal 
-							para mostrar algunos proyectos, herramientas, entre otras cosas, hechas con 
-							diferentes tecnologías y lenguajes de programación. 
+							<?php echo $lang['p-1'] ?>
 						</p>		
 						<p>
-							En los proyectos que se muestran se puede ver el uso de HTML, CSS, 
-							PHP, Javascript, JQuery, el preprocesador de CSS SASS y SQL. También hay algunas cosas en C, C++, Java, NodeJs, 
-							las cuales	no son muchas y aun se encuentran en proceso de aprendizaje, algunos de estos
-							codigos se pueden ver en mi 
-							<a target="_blank" href="https://github.com/luiisdelar">repositorio en GitHub</a>. Los 
-							Frameworks en los cuales tengo experiencia son: Boostrap de CSS, Laravel de PHP, 
-							y actualmente aprendiendo usar la libreria de Facebook, ReactJS.
+							<?php echo $lang['p-2'] ?>
 						</p>
 					</article>
 				</div>	
@@ -69,32 +62,54 @@
 		</div>
 	</div>
 
+	<div class="container-fluid" id="disenos">
+		<h2 class="text-center pt-2"><?php echo $lang['titulo-2'] ?> 👨🏻‍🎨</h2>
+		
+		<div class="row d-flex justify-content-center mb-2 mt-2">
+			<div class="col-lg-7 col-md-12 col-sm-12">
+				<article>
+					<p>	
+						<?php echo $lang['p-3'] ?>
+					</p>
+				</article>
+			</div>
+		</div>
+			
+		
+		<div class="row d-flex justify-content-center mb-2 mt-2">
+			<div class="col-lg-4 col-md-8 col-sm-12 mt-2 col-img-d">
+				<img class="shadow-lg" src="imgs/d1.gif" alt="imagen de diseño" height="">
+				<button class="btn btn-neg form-control mt-2 mb-4" 
+					onclick="location.href='diseños/diseño-1/';"><?php echo $lang['dis'] ?> 1</button>
+			</div>
+			
+			<div class="col-lg-4 col-md-8 col-sm-12 mt-2 col-img-d">
+				<img class="shadow-lg" src="imgs/d2.gif" alt="imagen de diseño" height="">
+				<button class="btn btn-neg form-control mt-2 mb-4" 
+					onclick="location.href='diseños/diseño-2/';"><?php echo $lang['dis'] ?> 2</button>
+			</div>
+		</div>	
+	</div>
+
 	<div class="container-fluid" id="proyectos">	
 		<div class="proyectos">
 			
 			<div class="text-center mov">
-				<h2 class="m-4">Proyectos 💼</h2>
+				<h2 class="m-4"><?php echo $lang['titulo-3'] ?> 💼</h2>
 			</div>
 
 			<div class="row justify-content-center align-items-center">	
 				<div class="col-lg-5 col-md-8 col-sm-12">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
-					 	<img class="card-img-top border border-dark" src="imgs/img1.png" alt="imagen de proyecto" height="">
+					 	<img class="card-img-top border border-dark" src="imgs/img1.jpg" alt="imagen de proyecto" height="">
 					  	<div class="card-body">
-					    	<h4 class="card-title text-center">Sistema de Torneos</h4>
+					    	<h4 class="card-title text-center"><?php echo $lang['tp-1'] ?></h4>
 					    	<p class="card-text">
-								En este proyecto podemos registrar la participación de distintos
-								equipos en diferentes torneos deportivos. El administrador del 
-								sistema puede editar y ver la informacion de los distintos equipos
-								inscritos en los torneos. Con este sistema los oganizadores pueden conocer cuántas 
-								personas van a participar y conocer como repartir los premios, 
-								definir los enfrentamientos, por mencionar algunas tareas a 
-								realizar por parte de los organizadores. Esta aplicación fue hecha con 
-								HTML, CSS3, Boostrap, Js y SQL para guardar la informacion en la base de datos.
+								<?php echo $lang['proyecto-1'] ?>
 							</p>
 							<div class="btn-card">
 								<button class="btn btn-neg form-control" 
-									    onclick="location.href='proyectos/torneo-deportes/';">Acceder</button>
+									    onclick="location.href='proyectos/torneo-deportes/';"><?php echo $lang['acc'] ?></button>
 							</div>
 							<p class="card-text">
 					    		<small class="text-muted">
@@ -113,11 +128,9 @@
 					 	<img class="card-img-top border border-dark" src="imgs/img2.png" alt="imagen de proyecto" height="">
 					  	<div class="card-body">
 					    	<h4 class="card-title text-center">Cable UNET</h4>
-					    	<p class="card-text">Sistema Web para la administración de servicios de cable, internet y telefonía. 
-							En este proyecto el administrador puede crear diferentes servicios a vender asi como asignarle
-							a cada servicio su caracterista correspondiente </p>
+					    	<p class="card-text"><?php echo $lang['proyecto-1'] ?></p>
 							<div class="btn-card">
-								<button class="btn btn-neg disabled form-control">En Construcción</button>
+								<button class="btn btn-neg disabled form-control"><?php echo $lang['const'] ?></button>
 							</div>
 					    	<p class="card-text">
 					    		<small class="text-muted">
@@ -132,14 +145,11 @@
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
 					 	<img class="card-img-top border border-dark" src="imgs/img3.png" alt="imagen de proyecto" height="">
 					  	<div class="card-body">
-					    	<h4 class="card-title text-center">Calculadora de notas UNET</h4>
-					    	<p class="card-text"> En esta aplicación web podemos calcular la nota 
-							en base a los porcentajes de cada parcial, tambien dispone de la opción de 
-							calcular cuanto falta para pasar una materia en base al criterio de evaluación 
-							de la <a href="https://unet.edu.ve">UNET.</a> </p>
+					    	<h4 class="card-title text-center"><?php echo $lang['tp-3'] ?></h4>
+					    	<p class="card-text"><?php echo $lang['proyecto-3'] ?></p>
 							<div class="btn-card">
 								<button class="btn btn-neg form-control"
-										onclick="location.href='proyectos/calculadoraunet';">Acceder</button>
+										onclick="location.href='proyectos/calculadoraunet';"><?php echo $lang['acc'] ?></button>
 							</div>
 					    	<p class="card-text">
 					    		<small class="text-muted">
@@ -152,21 +162,15 @@
 
 				<div class="col-lg-5 col-md-8 col-sm-12 align-middle">
 					<div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
-					 	<img class="card-img-top border border-dark" src="imgs/img4.png" alt="imagen de proyecto" height="">
+					 	<img class="card-img-top border border-dark" src="imgs/img4.jpg" alt="imagen de proyecto" height="">
 					  	<div class="card-body">
 					    	<h4 class="card-title text-center">Tenis Store</h4>
 					    	<p class="card-text">
-								Aplicación web de tipo facturacion/inventario donde
-								siendo el administrador podemos, registrar empleados, agregar, eliminar
-								o modificar productos en la tienda (en este caso la tienda ficticia es de 
-								zapatos deportivos). Y a su vez siendo empleado podemos facturas los productos a los 
-								clientes los cuales podemos registrar tambien desde una interfaz web. El 
-								administrador puede generar reportes en pdf de ciertas estadisticas acerca
-								de los productos facturados y añadidos en la tienda
+								<?php echo $lang['proyecto-4'] ?>
 								</p>
 							<div class="btn-card">
 								<button class="btn btn-neg form-control"
-										onclick="location.href='proyectos/tenisstore';">Acceder</button>
+										onclick="location.href='proyectos/tenisstore';"><?php echo $lang['acc'] ?></button>
 							</div>
 					    	<p class="card-text">
 					    		<small class="text-muted">
